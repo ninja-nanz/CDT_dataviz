@@ -1,21 +1,29 @@
+//=========================================================================
+// DECLARE VARIABLES
+//=========================================================================
+
 var immigrationData;
 var stateData = []; // array of state objects. Each object has state name, total immigrants, birthplaces and number of people
 let input, button;
 
-function preload() {
-  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header'); // the CSV data
-}
 
 //=========================================================================
 // SETUP CODE
 //=========================================================================
 
+function preload() {
+  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header'); // the CSV data
+}
+
 
 function setup() { 
-    noCanvas();
+   createCanvas(710, 400);
+   
+    
+   // noCanvas();
     var immigrationData = birthplaceTable.getObject();
 
-  //Putting Ojects in an Array
+    //Putting Ojects in an Array
     for (const [key, value] of Object.entries(immigrationData)) {
       var stateObj = value;
       stateData.push(stateObj);
@@ -35,11 +43,18 @@ function setup() {
     greeting = createElement('h2', 'Which U.S. state?');
     greeting.position(500, 5);
 
-    textAlign(CENTER);
-    textSize(50);
-    
 
+    
 } 
+
+
+
+//BACKGROUND 
+function createBackground(){
+  background('#D45402');
+  
+}
+
 
 //=========================================================================
 // SHOW STATE DATA
@@ -76,7 +91,6 @@ function showState() {
   }
 
 
-
 }
 
 
@@ -85,6 +99,15 @@ function showState() {
 //=========================================================================
 
 
+
 function draw() { 
-  background(220);
+
+  createBackground()
+
+  //SHOW STATE
+
+  for (let i = 0; i < stateData.length; i++) {
+    
+  }
+  
 }
