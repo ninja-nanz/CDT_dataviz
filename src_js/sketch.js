@@ -3,45 +3,48 @@ var stateData = []; // array of state objects. Each object has state name, total
 let input, button;
 
 function preload() {
-
-  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header');
-
-
+  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header'); // the CSV data
 }
 
-////////////////////
+//=========================================================================
+// SETUP CODE
+//=========================================================================
+
 
 function setup() { 
-  noCanvas();
-  var immigrationData = birthplaceTable.getObject();
+    noCanvas();
+    var immigrationData = birthplaceTable.getObject();
 
   //Putting Ojects in an Array
-  for (const [key, value] of Object.entries(immigrationData)) {
-    var stateObj = value;
-    stateData.push(stateObj);
-  }
-  
-  console.log(stateData);
+    for (const [key, value] of Object.entries(immigrationData)) {
+      var stateObj = value;
+      stateData.push(stateObj);
+    }
+    
+    console.log(stateData);
 
   //Input field 
-  
-  input = createInput();
-  input.position(500, 65);
+    
+    input = createInput();
+    input.position(500, 65);
 
-  button = createButton('submit');
-  button.position(input.x + input.width, 65);
-  button.mousePressed(showState);
+    button = createButton('submit');
+    button.position(input.x + input.width, 65);
+    button.mousePressed(showState);
 
-  greeting = createElement('h2', 'Which U.S. state?');
-  greeting.position(500, 5);
+    greeting = createElement('h2', 'Which U.S. state?');
+    greeting.position(500, 5);
 
-  textAlign(CENTER);
-  textSize(50);
-  
+    textAlign(CENTER);
+    textSize(50);
+    
 
 } 
 
-////// State Data 
+//=========================================================================
+// SHOW STATE DATA
+//=========================================================================
+
 
 function showState() {
 
@@ -77,7 +80,10 @@ function showState() {
 }
 
 
-////////////
+//=========================================================================
+// DRAW
+//=========================================================================
+
 
 function draw() { 
   background(220);
