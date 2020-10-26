@@ -1,0 +1,318 @@
+Cities ,number_of_things
+New York,500
+Los Angeles,345
+Chicago,64
+Houston[3],758
+Phoenix,54
+Philadelphia[e],356
+San Antonio,764
+San Diego,46
+Dallas,765
+San Jose,467
+Austin,86
+Jacksonville[f],853
+Fort Worth,764
+Columbus,574
+Charlotte,500
+San Francisco[g],345
+Indianapolis[h],64
+Seattle,758
+Denver[i],54
+Washington[j],356
+Boston,764
+El Paso,46
+Nashville[k],765
+Detroit,467
+Oklahoma City,86
+Portland,853
+Las Vegas,764
+Memphis,574
+Louisville[l],500
+Baltimore[m],345
+Milwaukee,64
+Albuquerque,758
+Tucson,54
+Fresno,356
+Mesa,764
+Sacramento,46
+Atlanta,765
+Kansas City,467
+Colorado Springs,86
+Omaha,853
+Raleigh,764
+Miami,574
+Long Beach,500
+Virginia Beach[m],345
+Oakland,64
+Minneapolis,758
+Tulsa,54
+Tampa,356
+Arlington,764
+New Orleans[n],46
+Wichita,765
+Bakersfield,467
+Cleveland,86
+Aurora,853
+Anaheim,764
+Honolulu[b],574
+Santa Ana,500
+Riverside,345
+Corpus Christi,64
+Lexington[o],758
+Henderson,54
+Stockton,356
+Saint Paul,764
+Cincinnati,46
+St. Louis[m],765
+Pittsburgh,467
+Greensboro,86
+Lincoln,853
+Anchorage[p],764
+Plano,574
+Orlando,500
+Irvine,345
+Newark,64
+Durham,758
+Chula Vista,54
+Toledo,356
+Fort Wayne,764
+St. Petersburg,46
+Laredo,765
+Jersey City,467
+Chandler,86
+Madison,853
+Lubbock,764
+Scottsdale,574
+Reno,500
+Buffalo,345
+Gilbert[q],64
+Glendale,758
+North Las Vegas,54
+Winston–Salem,356
+Chesapeake[m],764
+Norfolk[m],46
+Fremont,765
+Garland,467
+Irving,86
+Hialeah,853
+Richmond[m],764
+Boise[r],574
+Spokane,500
+Baton Rouge[s],345
+Tacoma,64
+San Bernardino,758
+Modesto,54
+Fontana,356
+Des Moines,764
+Moreno Valley,46
+Santa Clarita,765
+Fayetteville,467
+Birmingham,86
+Oxnard,853
+Rochester,764
+Port St. Lucie,574
+Grand Rapids,500
+Huntsville,345
+Salt Lake City,64
+Frisco,758
+Yonkers,54
+Amarillo,356
+Glendale,764
+Huntington Beach,46
+McKinney,765
+Montgomery,467
+Augusta[t],86
+Aurora,853
+Akron,764
+Little Rock,574
+Tempe,500
+Columbus[u],345
+Overland Park,64
+Grand Prairie,758
+Tallahassee,54
+Cape Coral,356
+Mobile,764
+Knoxville,46
+Shreveport,765
+Worcester,467
+Ontario,86
+Vancouver,853
+Sioux Falls,764
+Chattanooga,574
+Brownsville,500
+Fort Lauderdale,345
+Providence,64
+Newport News[m],758
+Rancho Cucamonga,54
+Santa Rosa,356
+Peoria,764
+Oceanside,46
+Elk Grove,765
+Salem,467
+Pembroke Pines,86
+Eugene,853
+Garden Grove,764
+Cary[v],574
+Fort Collins,500
+Corona,345
+Springfield,64
+Jackson,758
+Alexandria[m],54
+Hayward,356
+Clarksville,764
+Lakewood,46
+Lancaster,765
+Salinas,467
+Palmdale,86
+Hollywood,853
+Springfield,764
+Macon[w],574
+Kansas City[x],500
+Sunnyvale,345
+Pomona,64
+Killeen,758
+Escondido,54
+Pasadena,356
+Naperville,764
+Bellevue,46
+Joliet,765
+Murfreesboro,467
+Midland,86
+Rockford,853
+Paterson,764
+Savannah,574
+Bridgeport,500
+Torrance,345
+McAllen,64
+Syracuse,758
+Surprise,54
+Denton,356
+Roseville,764
+Thornton,46
+Miramar,765
+Pasadena,467
+Mesquite,86
+Olathe,853
+Dayton,764
+Carrollton,574
+Waco,500
+Orange,345
+Fullerton,64
+Charleston,758
+West Valley City,54
+Visalia,356
+Hampton[m],764
+Gainesville,46
+Warren,765
+Coral Springs,467
+Cedar Rapids,86
+Round Rock,853
+Sterling Heights,764
+Kent,574
+Columbia,500
+Santa Clara,345
+New Haven,64
+Stamford,758
+Concord,54
+Elizabeth,356
+Athens[y],764
+Thousand Oaks,46
+Lafayette[z],765
+Simi Valley,467
+Topeka,86
+Norman,853
+Fargo,764
+Wilmington,574
+Abilene,500
+Odessa,345
+Columbia,64
+Pearland,758
+Victorville,54
+Hartford,356
+Vallejo,764
+Allentown,46
+Berkeley,765
+Richardson,467
+Arvada,86
+Ann Arbor,853
+Rochester,764
+Cambridge,574
+Sugar Land,500
+Lansing,345
+Evansville,64
+College Station,758
+Fairfield,54
+Clearwater,356
+Beaumont,764
+Independence,46
+Provo,765
+West Jordan,467
+Murrieta,86
+Palm Bay,853
+El Monte,764
+Carlsbad,574
+North Charleston,500
+Temecula,345
+Clovis,64
+Springfield,758
+Meridian,54
+Westminster,356
+Costa Mesa,764
+High Point,46
+Manchester,765
+Pueblo,467
+Lakeland,86
+Pompano Beach,853
+West Palm Beach,764
+Antioch,574
+Everett,500
+Downey,345
+Lowell,64
+Centennial,758
+Elgin,54
+Richmond,356
+Peoria,764
+Broken Arrow,46
+Miami Gardens,765
+Billings,467
+Jurupa Valley,86
+Sandy Springs,853
+Gresham,764
+Lewisville,574
+Hillsboro,500
+Ventura[ab],345
+Greeley,64
+Inglewood,758
+Waterbury,54
+League City,356
+Santa Maria,764
+Tyler,46
+Davie[ac],765
+Lakewood[ad],467
+Daly City,86
+Boulder,853
+Allen,764
+West Covina,574
+Sparks,500
+Wichita Falls,345
+Green Bay,64
+San Mateo,758
+Norwalk,54
+Rialto,356
+Las Cruces,764
+Chico,46
+El Cajon,765
+Burbank,467
+South Bend,86
+Renton,853
+Vista,764
+Davenport,574
+Edinburg,500
+Tuscaloosa,345
+Carmel,64
+Spokane Valley,758
+San Angelo,54
+Vacaville,356
+Clinton[ae],764
+Bend,46
+Woodbridge[ad],765

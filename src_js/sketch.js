@@ -1,26 +1,83 @@
+var immigrationData;
+var stateData = []; // array of state objects. Each object has state name, total immigrants, birthplaces and number of people
+let input, button;
+
 function preload() {
-  let q = "immigration";
-  let apikey = "HeFa7GwC4X0IXFTFUmXpA1z9OtJ97V3i"; //nanz's API key
-  
-  let url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + q +"&api-key=" + apikey;
-  loadJSON(url, gotData);
+
+  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header');
+
+
 }
+
+////////////////////
 
 function setup() { 
   noCanvas();
+  var immigrationData = birthplaceTable.getObject();
+
+  //Putting Ojects in an Array
+  for (const [key, value] of Object.entries(immigrationData)) {
+    var stateObj = value;
+    stateData.push(stateObj);
+  }
+  
+  console.log(stateData);
+
+  //Input field 
+  
+  input = createInput();
+  input.position(500, 65);
+
+  button = createButton('submit');
+  button.position(input.x + input.width, 65);
+  button.mousePressed(showState);
+
+  greeting = createElement('h2', 'Which U.S. state?');
+  greeting.position(500, 5);
+
+  textAlign(CENTER);
+  textSize(50);
+  
+
 } 
 
-function gotData(data) {
-  let articles = data.response.docs;
-  print(articles.length);
-  for (let i = 0; i < articles.length; i++) {
-    createElement('h3', articles[i].headline.main);
-    createP("pub_date: "+articles[i].pub_date+"<br>"+
-            "web_url: "+articles[i].web_url+"<br>"+
-            "word_count: "+articles[i].word_count+"<br>"+
-           articles[i].snippet);
+////// State Data 
+
+function showState() {
+
+  const typedState = input.value(); //get state from input
+
+  for (let i = 0; i < stateData.length; i++) {
+    var stateName = stateData[i].STATE;
+    
+    if (stateName == typedState) {
+      selectedState = stateData[i]
+
+      
+      var sortByTop10 = Object.entries(selectedState)
+                                .sort(([,a],[,b]) => b-a)
+                                .slice(0, 12)
+                                .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
+
+      for (const [key, value] of Object.entries(sortByTop10)) {
+    
+        createP(`${key}: ${value}`)
+
+      }
+
+
+    }
+
+   input.value("");
+   
   }
+
+
+
 }
+
+
+////////////
 
 function draw() { 
   background(220);
