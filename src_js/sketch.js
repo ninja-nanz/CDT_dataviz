@@ -6,6 +6,7 @@ var immigrationData;
 var stateData = []; // array of state objects. Each object has state name, total immigrants, birthplaces and number of people
 let input, button;
 let stateDisplayObj;
+let birthplacesObj;
 
 
 //=========================================================================
@@ -18,7 +19,7 @@ function preload() {
 
 
 function setup() { 
-  createCanvas(windowWidth, 200);
+  createCanvas(windowWidth, windowHeight);
 
    
     
@@ -46,9 +47,9 @@ function setup() {
     greeting.position(0, 20);
 
 
-  // stateDisplayObj = new stateDataDisplay();
+    stateDisplayObj = new stateDataDisplay(); //Creating state object for display
 
-  
+    
 
 } 
 
@@ -75,10 +76,7 @@ function showStateData() {
     var stateName = stateData[i].STATE;
     
     if (stateName == typedState) {
-      selectedState = stateData[i]
-
-      
-      createElement('h2',  'Top 10 birthplaces of immigrants from ' + selectedState.STATE );
+      selectedState = stateData[i];
       
       
       var ObjSortedByTop10 = Object.entries(selectedState)
@@ -92,6 +90,11 @@ function showStateData() {
                                               total =  selectedState.Total, 
                                               birthplaces = ObjSortedByTop10);
 
+        /*
+
+      // DISPLAY IN HTML  
+
+      createElement('h2',  'Top 10 birthplaces of immigrants from ' + selectedState.STATE );
       for (const [key, value] of Object.entries(ObjSortedByTop10)) {
         
         createP(key +": "+ value);
@@ -99,8 +102,9 @@ function showStateData() {
       }
 
       createElement('h5',  'Total immigrants: ' + selectedState.Total);
-
+      */
     }
+    
 
    input.value("");
 
@@ -115,19 +119,45 @@ class stateDataDisplay {
     this.state = state;
     this.total = total, 
     this.birthplaces = birthplaces;
-    this.x = 50;
-    this.y = 50 ;
-    this.diameter = random(50, 50);
+    this.x = random(width);
+    this.y = random(height);
+    this.diameter = random(10, 30);
 
   }
 
 
   display() {
-    fill("#ffffff");
-    text(this.state);
-    ellipse(this.x, this.y, this.diameter, this.diameter);
-    
+    if (this.state !== undefined) {
+      noFill();
+      noStroke();
+      fill('#ffffff');
+      textSize(40);
+      text(this.state, 200, 200);
+      textSize(20);
+      text("Total immigrant population: " + this.total, 200, 230);
+      
+      birthplacesObj = this.birthplaces
+
+      /*
+
+      Object.entries(this.birthplaces).forEach(([key, value]) => {
+          fill('brown');
+          ellipse(this.x, this.y, value/5000, value/5000);
+          fill('white');
+          textSize(20);
+          text(`${key}: ${value}`, 200, 400);          
+
+      })
+      */
+
+      //console.log(this.birthplaces)
+    }
   }
+
+  
+
+
+
 }
 
 
@@ -141,7 +171,21 @@ class stateDataDisplay {
 function draw() { 
 
   createBackground();
+
   stateDisplayObj.display();
+
+  if (birthplacesObj !== undefined) {
   
+    Object.entries(birthplacesObj).forEach(([key, value]) => {
+      fill('brown');
+      ellipse(random(width), random(height), value/5000, value/5000);
+      fill('white');
+      textSize(20);
+      text(`${key}: ${value} `, 200, 400); 
+           
+    })
+
+  }
+
   
 }
