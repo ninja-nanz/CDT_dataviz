@@ -121,8 +121,8 @@ class stateDataDisplay {
 function draw() { 
 
   createBackground();
-  let c=100;
-  //let c=0;
+  //let c=100;
+  let c=0;
 
   if (birthplacesObj !== undefined) {
   
@@ -134,9 +134,9 @@ function draw() {
       text(`${key}: ${value} `, birthplacesPosx, birthplacesPosy+=40); 
       
       for (let i = 0; i < 1; i++) {
-        c-=10
-        fill(10,43,73,c);
-        //fill(ballfill[c]);
+        c+=1
+        //fill(10,43,73,c);
+        fill(ballfill[c]);
         stroke('white');
         ellipse(birthplacesPosx-50, birthplacesPosy+=20, value/5000, value/5000);
       }
