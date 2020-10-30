@@ -138,7 +138,7 @@ function draw() {
         //fill(10,43,73,c);
         fill(ballfill[c]);
         stroke('white');
-        ellipse(birthplacesPosx-50, birthplacesPosy+=20, value/5000, value/5000);
+        ellipse(birthplacesPosx-50, birthplacesPosy+=20, sqrt(value)/10, sqrt(value)/10);
       }
 
     })

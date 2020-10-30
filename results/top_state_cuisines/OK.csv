@@ -1,11 +1,11 @@
-,cuisine,count,percentage
-67,Steak,5,0.025
-60,Sandwich,5,0.025
-16,Coffee and Tea,5,0.025
-22,Donuts,5,0.025
-64,Southern,5,0.025
-27,Fast Food,5,0.025
-73,Tex-Mex,5,0.025
-19,Desserts,5,0.025
-9,Breakfast,5,0.025
-55,Pizza,5,0.025
+,cuisine,count,percentage,state_code
+67,Steak,5,0.025,OK
+60,Sandwich,5,0.025,OK
+16,Coffee and Tea,5,0.025,OK
+22,Donuts,5,0.025,OK
+64,Southern,5,0.025,OK
+27,Fast Food,5,0.025,OK
+73,Tex-Mex,5,0.025,OK
+19,Desserts,5,0.025,OK
+9,Breakfast,5,0.025,OK
+55,Pizza,5,0.025,OK
