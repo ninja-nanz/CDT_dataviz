@@ -48,9 +48,8 @@ function setup() {
 
 
     stateDisplayObj = new stateDataDisplay(); //Creating state object for display
-
-    
-
+ 
+ 
 } 
 
 
@@ -78,37 +77,18 @@ function showStateData() {
     if (stateName == typedState) {
       selectedState = stateData[i];
       
-      
       var ObjSortedByTop10 = Object.entries(selectedState)
                                 .sort(([,a],[,b]) => b-a)
                                 .slice(2, 12)
                                 .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
 
-      
-
       stateDisplayObj = new stateDataDisplay( state = selectedState.STATE,
                                               total =  selectedState.Total, 
                                               birthplaces = ObjSortedByTop10);
 
-        /*
-
-      // DISPLAY IN HTML  
-
-      createElement('h2',  'Top 10 birthplaces of immigrants from ' + selectedState.STATE );
-      for (const [key, value] of Object.entries(ObjSortedByTop10)) {
-        
-        createP(key +": "+ value);
-
-      }
-
-      createElement('h5',  'Total immigrants: ' + selectedState.Total);
-      */
     }
     
-
-   input.value("");
-
-   
+   input.value(""); 
    
   }
 }
@@ -138,7 +118,7 @@ class stateDataDisplay {
       
       birthplacesObj = this.birthplaces
 
-      /*
+      /* ///TRYING TO DISPLAY DATA!!
 
       Object.entries(this.birthplaces).forEach(([key, value]) => {
           fill('brown');
@@ -153,9 +133,6 @@ class stateDataDisplay {
       //console.log(this.birthplaces)
     }
   }
-
-  
-
 
 
 }
