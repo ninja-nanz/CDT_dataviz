@@ -70,7 +70,7 @@ class Zomato:
             if lev_distance<5:
                 return a['location_suggestions'][0]['id']
             else:
-                return -9999
+                return -9999, city_suggested
 
 
     def get_city_name(self, city_ID):
