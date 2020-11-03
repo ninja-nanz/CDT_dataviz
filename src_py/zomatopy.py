@@ -71,7 +71,30 @@ class Zomato:
                 return a['location_suggestions'][0]['id']
             else:
                 return -9999, city_suggested
-
+            
+    def get_city_restaurant_count(self, city_ID="", cuisines="", limit=5):
+        """
+        Takes either query, latitude and longitude or cuisine as input.
+        Returns a list of Restaurant IDs.
+        """
+        #https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&cuisines=73%2C%2025
+        cuisines = cuisines.strip()
+        cuisines = "%2C".join(cuisines.split(","))
+        
+        self.is_valid_city_id(city_ID)
+        
+        if str(limit).isalpha() == True:
+            raise ValueError('LimitNotInteger')
+        
+        headers = {'Accept': 'application/json', 'user-key': self.user_key}
+        query_str = base_url + "search?" + "&entity_id" + str(city_ID) + "entity_type=city"\
+                                + "&count=" + str(limit) + "&cuisines=" + str(cuisines)
+        
+        r = (requests.get(query_str, headers=headers).content).decode("utf-8")
+        a = json.loads(r)
+        
+        restaurant_count = a['results_found']
+        return restaurant_count
 
     def get_city_name(self, city_ID):
         """
