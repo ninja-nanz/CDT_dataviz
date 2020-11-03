@@ -1,0 +1,402 @@
+,zcity_id,city_query,state_code
+8,276,Dallas TX,TX
+3,277,Houston TX,TX
+10,278,Austin TX,TX
+17,279,Seattle WA,WA
+0,280,New York NY,NY
+1,281,Los Angeles CA,CA
+25,282,Las Vegas NV,NV
+19,283,Washington DC,DC
+22,285,Detroit MI,MI
+24,286,Portland OR,OR
+5,287,Philadelphia PA,PA
+35,288,Atlanta GA,GA
+20,289,Boston MA,MA
+48,290,New Orleans LA,LA
+40,291,Miami FL,FL
+2,292,Chicago IL,IL
+4,301,Phoenix AZ,AZ
+7,302,San Diego CA,CA
+14,303,Charlotte NC,NC
+6,304,San Antonio TX,TX
+18,305,Denver CO,CO
+15,306,San Francisco CA,CA
+66,415,Anchorage AK,AK
+106,421,Birmingham AL,AL
+520,427,Dothan AL,AL
+111,430,Huntsville AL,AL
+130,433,Mobile AL,AL
+119,436,Montgomery AL,AL
+302,439,Tuscaloosa AL,AL
+123,442,Little Rock AR,AR
+374,445,Fort Smith AR,AR
+316,463,Yuma AZ,AZ
+31,466,Tucson AZ,AZ
+467,469,Flagstaff AZ,AZ
+294,475,Chico CA,CA
+351,478,Redding CA,CA
+160,481,Lancaster CA,CA
+193,484,Orange CA,CA
+248,490,Temecula CA,CA
+50,496,Bakersfield CA,CA
+34,499,Sacramento CA,CA
+197,505,Visalia CA,CA
+59,508,Stockton CA,CA
+281,511,Santa Maria CA,CA
+32,514,Fresno CA,CA
+223,523,Victorville CA,CA
+357,526,Santa Barbara CA,CA
+37,529,Colorado Springs CO,CO
+256,535,Pueblo CO,CO
+579,538,Grand Junction CO,CO
+224,544,Hartford CT,CT
+208,550,New Haven CT,CT
+510,556,Wilmington DE,DE
+11,574,Jacksonville FL,FL
+407,577,Melbourne FL,FL
+378,586,Fort Myers FL,FL
+602,589,Ocala FL,FL
+199,592,Gainesville FL,FL
+128,595,Tallahassee FL,FL
+519,598,Daytona Beach FL,FL
+68,601,Orlando FL,FL
+46,604,Tampa FL,FL
+717,607,Pensacola FL,FL
+492,610,Albany GA,GA
+663,613,Valdosta GA,GA
+178,619,Savannah GA,GA
+125,622,Columbus GA,GA
+120,628,Augusta-Richmond County GA,GA
+212,634,Athens-Clarke County GA,GA
+102,643,Des Moines IA,IA
+300,646,Davenport IA,IA
+410,649,Sioux City IA,IA
+202,652,Cedar Rapids IA,IA
+538,655,Waterloo IA,IA
+649,658,Dubuque IA,IA
+95,664,Boise City ID,ID
+662,667,Pocatello ID,ID
+754,673,Twin Falls ID,ID
+725,676,Coeur d'Alene ID,ID
+582,679,Idaho Falls ID,ID
+366,685,Champaign IL,IL
+176,688,Rockford IL,IL
+501,691,Decatur IL,IL
+267,694,Peoria IL,IL
+447,697,Bloomington IL,IL
+250,700,Springfield IL,IL
+74,703,Fort Wayne IN,IN
+603,709,Terre Haute IN,IN
+528,712,Muncie IN,IN
+235,715,Evansville IN,IN
+16,718,Indianapolis IN,IN
+385,721,Bloomington IN,IN
+297,724,South Bend IN,IN
+496,727,Lafayette IN,IN
+49,730,Wichita KS,KS
+216,733,Topeka KS,KS
+57,742,Lexington-Fayette KY,KY
+27,745,Louisville KY,KY
+505,751,Bowling Green KY,KY
+97,757,Baton Rouge LA,LA
+439,763,Lake Charles LA,LA
+132,766,Shreveport LA,LA
+214,772,Lafayette LA,LA
+330,781,New Bedford MA,MA
+28,787,Baltimore MD,MD
+551,793,Portland ME,ME
+455,802,Kalamazoo MI,MI
+234,814,Lansing MI,MI
+110,817,Grand Rapids MI,MI
+328,820,Flint MI,MI
+761,823,Saginaw MI,MI
+231,829,Rochester MN,MN
+386,832,Duluth MN,MN
+469,838,St Joseph MO,MO
+62,844,St Louis MO,MO
+154,850,Springfield MO,MO
+745,853,Joplin MO,MO
+36,856,Kansas City MO,MO
+222,859,Columbia MO,MO
+155,862,Jackson MS,MS
+497,865,Gulfport MS,MS
+639,877,Great Falls MT,MT
+270,880,Billings MT,MT
+460,886,Missoula MT,MT
+349,901,Asheville NC,NC
+105,907,Fayetteville NC,NC
+488,913,Jacksonville NC,NC
+219,916,Wilmington NC,NC
+346,922,Greenville NC,NC
+666,925,Grand Forks ND,ND
+218,931,Fargo ND,ND
+478,937,Bismarck ND,ND
+65,943,Lincoln NE,NE
+38,946,Omaha NE,NE
+255,949,Manchester NH,NH
+293,961,Las Cruces NM,NM
+30,964,Albuquerque NM,NM
+394,970,Santa Fe NM,NM
+82,976,Reno NV,NV
+182,988,Syracuse NY,NY
+321,997,Albany NY,NY
+108,1003,Rochester NY,NY
+613,1009,Utica NY,NY
+83,1012,Buffalo NY,NY
+190,1015,Dayton OH,OH
+559,1018,Youngs OH,OH
+13,1021,Columbus OH,OH
+507,1027,Canton OH,OH
+61,1030,Cincinnati OH,OH
+51,1033,Cleveland OH,OH
+73,1042,Toledo OH,OH
+45,1045,Tulsa OK,OK
+23,1051,Oklahoma City OK,OK
+347,1054,Lawton OK,OK
+406,1057,Medford OR,OR
+147,1060,Salem OR,OR
+149,1063,Eugene OR,OR
+307,1066,Bend OR,OR
+452,1075,Scranton PA,PA
+63,1081,Pittsburgh PA,PA
+226,1084,Allen PA,PA
+329,1090,Erie PA,PA
+627,1093,Lancaster PA,PA
+140,1096,Providence RI,RI
+195,1105,Charleston SC,SC
+504,1111,Greenville SC,SC
+206,1114,Columbia SC,SC
+466,1117,Rock Hill SC,SC
+136,1126,Sioux Falls SD,SD
+446,1129,Rapid City SD,SD
+545,1135,Johnson City TN,TN
+137,1141,Chattanooga TN,TN
+26,1144,Memphis TN,TN
+158,1150,Clarksville TN,TN
+131,1153,Knoxville TN,TN
+138,1156,Brownsville TX,TX
+221,1159,Odessa TX,TX
+192,1162,Waco TX,TX
+305,1165,San Angelo TX,TX
+21,1168,El Paso TX,TX
+239,1171,Beaumont TX,TX
+56,1174,Corpus Christi TX,TX
+76,1177,Laredo TX,TX
+220,1180,Abilene TX,TX
+288,1183,Wichita Falls TX,TX
+115,1186,Amarillo TX,TX
+80,1189,Lubbock TX,TX
+282,1192,Tyler TX,TX
+236,1195,College Station TX,TX
+414,1198,Longview TX,TX
+168,1201,Killeen TX,TX
+181,1204,McAllen TX,TX
+544,1210,Victoria TX,TX
+112,1213,Salt Lake City UT,UT
+94,1219,Richmond VA,VA
+411,1222,Lynchburg VA,VA
+314,1225,Roanoke VA,VA
+198,1228,Hampton VA,VA
+96,1240,Spokane WA,WA
+344,1246,Yakima WA,WA
+718,1249,Olympia WA,WA
+352,1252,Bellingham WA,WA
+739,1255,La Crosse WI,WI
+543,1258,Oshkosh WI,WI
+522,1261,Eau Claire WI,WI
+79,1264,Madison WI,WI
+29,1267,Milwaukee WI,WI
+289,1273,Green Bay WI,WI
+763,1276,Charleston WV,WV
+574,1291,Cheyenne WY,WY
+648,1294,Casper WY,WY
+722,3750,Hoboken NJ,NJ
+390,3765,Clifton NJ,NJ
+751,3768,Plainfield NJ,NJ
+735,3800,Perth Amboy NJ,NJ
+177,3816,Paterson NJ,NJ
+514,3832,Passaic NJ,NJ
+573,3895,East Orange NJ,NJ
+721,3897,West New York NJ,NJ
+564,3908,Bayonne NJ,NJ
+529,3947,Union City NJ,NJ
+404,3948,Trenton NJ,NJ
+77,3959,Jersey City NJ,NJ
+70,3976,Newark NJ,NJ
+211,3990,Elizabeth NJ,NJ
+670,3992,New Brunswick NJ,NJ
+550,4120,Auburn AL,AL
+440,4293,Jonesboro AR,AR
+636,4363,Casa Grande AZ,AZ
+665,4399,Lake Havasu City AZ,AZ
+109,4567,Port St Lucie FL,FL
+502,4606,North Port FL,FL
+646,5453,Kokomo IN,IN
+459,5546,Hammond IN,IN
+468,5554,Gary IN,IN
+317,5649,Lawrence KS,KS
+690,5672,Manhattan KS,KS
+609,5804,Owensboro KY,KY
+749,5963,Methuen Town MA,MA
+426,5965,Lawrence MA,MA
+577,5966,Haverhill MA,MA
+133,5974,Worcester MA,MA
+263,6007,Lowell MA,MA
+680,6027,Chicopee MA,MA
+164,6036,Springfield MA,MA
+491,6086,Frederick MD,MD
+204,6294,Sterling Heights MI,MI
+525,6550,St Cloud MN,MN
+698,7164,Rocky Mount NC,NC
+737,7412,Grand Island NE,NE
+403,7905,Merced CA,CA
+476,7955,Turlock CA,CA
+758,8181,Enid OK,OK
+753,8279,Stillwater OK,OK
+677,8340,Albany OR,OR
+633,8348,Corvallis OR,OR
+457,8445,Bethlehem PA,PA
+620,8885,Vineland NJ,NJ
+449,9165,Bay TX,TX
+184,9244,Denton TX,TX
+429,9334,George TX,TX
+750,9440,Galveston TX,TX
+363,9655,St George UT,UT
+733,9661,Logan UT,UT
+715,9762,Harrisonburg VA,VA
+641,9983,Richland WA,WA
+462,9985,Pasco WA,WA
+397,9986,Kennewick WA,WA
+570,10331,Janesville WI,WI
+539,10506,Lakeville MN,MN
+315,10614,Beaverton OR,OR
+273,10629,Gresham OR,OR
+275,10631,Hillsboro OR,OR
+673,10647,Tigard OR,OR
+135,10650,Vancouver WA,WA
+172,10659,Bellevue WA,WA
+348,10663,Kirkland WA,WA
+494,10666,Redmond WA,WA
+553,10667,Sammamish WA,WA
+660,10674,Shoreline WA,WA
+261,10675,Everett WA,WA
+508,10677,Marysville WA,WA
+598,10692,Lakewood WA,WA
+98,10699,Tacoma WA,WA
+416,10700,Auburn WA,WA
+734,10702,Burien WA,WA
+324,10706,Federal Way WA,WA
+205,10707,Kent WA,WA
+298,10710,Renton WA,WA
+477,10716,Camden NJ,NJ
+360,10764,New Braunfels TX,TX
+43,10773,Oakland CA,CA
+444,10778,Alameda CA,CA
+260,10781,Antioch CA,CA
+227,10784,Berkeley CA,CA
+572,10785,Brentwood CA,CA
+210,10788,Concord CA,CA
+567,10791,Dublin CA,CA
+237,10795,Fairfield CA,CA
+90,10796,Fremont CA,CA
+157,10797,Hayward CA,CA
+361,10800,Livermore CA,CA
+486,10804,Pittsburg CA,CA
+413,10806,Pleasanton CA,CA
+266,10807,Richmond CA,CA
+299,10808,Vista CA,CA
+369,10811,San Leandro CA,CA
+456,10812,San Ramon CA,CA
+474,10814,Union City CA,CA
+225,10815,Vallejo CA,CA
+509,10816,Walnut Creek CA,CA
+626,10818,Cupertino CA,CA
+399,10820,Milpitas CA,CA
+207,10821,Santa Clara CA,CA
+166,10823,Sunnyvale CA,CA
+554,10824,Madera CA,CA
+672,10828,Novato CA,CA
+638,10831,San Rafael CA,CA
+441,10835,Napa CA,CA
+284,10841,Daly City CA,CA
+409,10847,Mountain View CA,CA
+562,10849,Palo Alto CA,CA
+383,10850,Redwood City CA,CA
+290,10853,San Mateo CA,CA
+531,10854,South San Francisco CA,CA
+605,10874,Petaluma CA,CA
+143,10877,Santa Rosa CA,CA
+9,10883,San Jose CA,CA
+430,10897,Cedar Park TX,TX
+586,10900,Leander TX,TX
+561,10902,Pflugerville TX,TX
+203,10903,Round Rock TX,TX
+568,10911,San Marcos TX,TX
+356,10916,Carson CA,CA
+623,10918,Gardena CA,CA
+382,10920,Hawthorne CA,CA
+41,10924,Long Beach CA,CA
+546,10930,Redondo Beach CA,CA
+180,10932,Torrance CA,CA
+402,10934,Alhambra CA,CA
+647,10936,Arcadia CA,CA
+463,10938,Baldwin Park CA,CA
+669,10941,Diamond Bar CA,CA
+245,10942,El Monte CA,CA
+732,10943,Glendora CA,CA
+614,10948,Monterey Park CA,CA
+188,10949,Pasadena CA,CA
+167,10950,Pomona CA,CA
+696,10951,Rosemead CA,CA
+287,10956,West Covina CA,CA
+389,10957,Whittier CA,CA
+296,10958,Burbank CA,CA
+116,10959,Glendale CA,CA
+104,10963,Santa Clarita CA,CA
+454,10964,Bellflower CA,CA
+756,10965,Cerritos CA,CA
+327,10966,Compton CA,CA
+655,10967,Huntington Park CA,CA
+278,10968,Inglewood CA,CA
+432,10969,Lakewood CA,CA
+512,10970,Lynwood CA,CA
+291,10971,Norwalk CA,CA
+697,10972,Paramount CA,CA
+359,10977,Santa Monica CA,CA
+12,10978,Fort Worth TX,TX
+286,10980,Allen TX,TX
+47,10981,Arlington TX,TX
+191,10983,Carrollton TX,TX
+716,10988,DeSoto TX,TX
+659,10989,Euless TX,TX
+113,10991,Frisco TX,TX
+91,10992,Garland TX,TX
+127,10993,Grand Prairie TX,TX
+678,10994,Grapevine TX,TX
+92,10995,Irving TX,TX
+274,11000,Lewisville TX,TX
+118,11001,McKinney TX,TX
+189,11002,Mesquite TX,TX
+67,11003,Plano TX,TX
+228,11005,Richardson TX,TX
+537,11007,Rowlett TX,TX
+714,11011,Wylie TX,TX
+503,11017,North Richland Hills TX,TX
+489,11036,Mansfield TX,TX
+165,11171,Kansas City KS,KS
+156,11174,Alexandria VA,VA
+285,11184,Boulder CO,CO
+33,11187,Mesa AZ,AZ
+78,11188,Chandler AZ,AZ
+85,11189,Glendale AZ,AZ
+81,11190,Scottsdale AZ,AZ
+124,11191,Tempe AZ,AZ
+144,11192,Peoria AZ,AZ
+84,11193,Gilbert AZ,AZ
+728,11194,Maricopa AZ,AZ
+183,11196,Surprise AZ,AZ
+591,11218,Pico Rivera CA,CA
+345,11222,South Gate CA,CA
+262,11233,Downey CA,CA
+162,11265,Palmdale CA,CA
+592,11268,Montebello CA,CA

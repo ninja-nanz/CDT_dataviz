@@ -1,0 +1,80 @@
+population,cuisine_names,cuisine_id
+Mexico,"Mexico, Taco, Tex-Mex","73,997,150"
+Canada,Canada,381
+India,India,148
+China,"China, Sichuan","25,128"
+Vietnam,Vietnam,99
+Philippines,Philippines,112
+Germany,Germany,134
+Korea,Korea,67
+El Salvador,El Salvador,601
+Iran,Iran,140
+Taiwan,Taiwan,190
+Japan,"Japan, Sushi, Teriyaki, Ramen","60,177,964,320"
+Peru,Peru,162
+China,"Hong Kong, Dim Sum","121, 411"
+Armenia,Armenia,175
+Thailand,Thailand,95
+Russia,Russia,84
+Nicaragua,Nicaragua,962
+United Kingdom,United Kingdom,"133,965"
+England,England,298
+Ukraine,Ukraine,451
+Cambodia,Cambodia,111
+Laos,Laos,901
+Pakistan,Pakistan,139
+Colombia,Colombia,287
+Brazil,Brazil,159
+Indonesia,Indonesia,114
+France,"France, Fondue, Crepes","45,318,881"
+Afghanistan,Afghanistan,1035
+Cuba,Cuba,153
+Argentina,Argentina,151
+Israel,Israel,218
+Italy,"Italy, Pizza","55,82"
+Lebanon,Lebanon,66
+Portugal,Portugal,87
+Burma,Burma,22
+Ethiopia,Ethiopia,149
+Ecuador,Ecuador,316
+Poland,Poland,219
+Australia,Australia,131
+South Africa,South Africa,267
+Turkey,Turkey,142
+Ireland,Ireland,135
+Malaysia,Malaysia,69
+Chile,Chile,229
+Spain,"Spain, Tapas","89, 179"
+Jamaica,Jamaica,207
+Sweden,Sweden,211
+Greece,Greece,156
+Sri Lanka,Sri Lanka,86
+Hungary,Hungary,228
+Singapore,Singapore,119
+Venezuela,Venezuela,641
+Scotland,Scotland,210
+Austria,Austria,201
+Denmark,Denmark,203
+Morocco,Morocco,147
+Belgium,Belgium,132
+Dominican Republic,Dominican Republic,958
+Uruguay,Uruguay,264
+"Oceania, nec","Oceania, n.e.c.","131, 961, 321"
+Guatemala,Guatemala,"972,136"
+Haiti,Haiti,158
+Bosnia and Herzegovina,Bosnia and Herzegovina,651
+Nepal,Nepal,117
+Honduras,South America,972
+Nigeria,Nigeria,152
+Iraq,Iraq,137
+Yemen,Yemen,137
+Other Eastern Africa,Other Eastern Africa,152
+Other Middle Africa,Other Middle Africa,152
+Somalia,Somalia,152
+Liberia,Liberia,152
+Other South Central Asia,Other South Central Asia,137
+Cabo Verde,Cabo Verde,137
+Egypt,Egypt,152
+"Oceania, n.e.c.","Oceania, n.e.c.","131, 961, 321"
+Kenya,Other Middle Africa,152
+Guyana,South America,972
