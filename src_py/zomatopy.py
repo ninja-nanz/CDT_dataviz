@@ -91,7 +91,6 @@ class Zomato:
         response_json = json.loads(r)
         
         restaurant_count = response_json['results_found']
-        print('restaurant_count', restaurant_count)
         return restaurant_count, response_json, query_str
 
     def get_city_name(self, city_ID):
