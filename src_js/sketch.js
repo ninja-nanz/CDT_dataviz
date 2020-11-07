@@ -7,31 +7,28 @@ var stateData = []; // array of state objects. Each object has state name, total
 let input, button;
 let stateDisplayObj;
 let birthplacesObj;
-
-
+let birthplacesPosx;
+let birthplacesPosy;
+var ObjSortedByTop10;
+let ballfill = ['#0A2B49','#0A2B49','#0E3C5E','#206F96','#4EAACE','#80D0C7','#42B29F','#308474','#124C41','#083F35','#0B231E']
 //=========================================================================
 // SETUP CODE
 //=========================================================================
 
 function preload() {
-  birthplaceTable = loadTable('transposed_birthplace.csv', 'csv', 'header'); // the CSV data
+  birthplaceTable = loadTable('./data/transposed_birthplace.csv', 'csv', 'header'); // the CSV data
 }
-
 
 function setup() { 
   createCanvas(windowWidth, windowHeight);
-
-   
-    
-   // noCanvas();
+  
     var immigrationData = birthplaceTable.getObject();
 
-    //Putting Ojects in an Array
+  //Putting Objects in an Array
     for (const [key, value] of Object.entries(immigrationData)) {
       var stateObj = value;
       stateData.push(stateObj);
     }
-    
     console.log(stateData);
 
   //Input field 
@@ -40,7 +37,7 @@ function setup() {
     input.position(190, 90);
 
     button = createButton('submit');
-    button.position(input.x + input.width, 90);
+    button.position(input.x + input.width+10, 90);
     button.mousePressed(showStateData);
 
     greeting = createElement('h2', 'Which U.S. state?');
@@ -48,11 +45,7 @@ function setup() {
 
 
     stateDisplayObj = new stateDataDisplay(); //Creating state object for display
- 
- 
 } 
-
-
 
 //BACKGROUND 
 function createBackground(){
@@ -61,11 +54,9 @@ function createBackground(){
   
 }
 
-
 //=========================================================================
 // SHOW STATE DATA
 //=========================================================================
-
 
 function showStateData() {
 
@@ -77,7 +68,7 @@ function showStateData() {
     if (stateName == typedState) {
       selectedState = stateData[i];
       
-      var ObjSortedByTop10 = Object.entries(selectedState)
+      ObjSortedByTop10 = Object.entries(selectedState)
                                 .sort(([,a],[,b]) => b-a)
                                 .slice(2, 12)
                                 .reduce((r, [k, v]) => ({ ...r, [k]: v }), {});
@@ -85,14 +76,12 @@ function showStateData() {
       stateDisplayObj = new stateDataDisplay( state = selectedState.STATE,
                                               total =  selectedState.Total, 
                                               birthplaces = ObjSortedByTop10);
-
     }
-    
-   input.value(""); 
-   
+
+   input.value("");
+
   }
 }
-
 
 class stateDataDisplay {
   constructor(state, total, birthplaces) {
@@ -105,7 +94,6 @@ class stateDataDisplay {
 
   }
 
-
   display() {
     if (this.state !== undefined) {
       noFill();
@@ -117,52 +105,43 @@ class stateDataDisplay {
       text("Total immigrant population: " + this.total, 200, 230);
       
       birthplacesObj = this.birthplaces
+      birthplacesPosx = 200
+      birthplacesPosy = 250
 
-      /* ///TRYING TO DISPLAY DATA!!
-
-      Object.entries(this.birthplaces).forEach(([key, value]) => {
-          fill('brown');
-          ellipse(this.x, this.y, value/5000, value/5000);
-          fill('white');
-          textSize(20);
-          text(`${key}: ${value}`, 200, 400);          
-
-      })
-      */
-
-      //console.log(this.birthplaces)
     }
   }
-
-
 }
-
-
 
 //=========================================================================
 // DRAW
 //=========================================================================
 
-
-
 function draw() { 
 
   createBackground();
-
-  stateDisplayObj.display();
+  //let c=100;
+  let c=0;
 
   if (birthplacesObj !== undefined) {
   
     Object.entries(birthplacesObj).forEach(([key, value]) => {
-      fill('brown');
-      ellipse(random(width), random(height), value/5000, value/5000);
+      // fill('blue');
+      // ellipse(random(width), random(height), value/5000, value/5000);
       fill('white');
       textSize(20);
-      text(`${key}: ${value} `, 200, 400); 
-           
-    })
+      text(`${key}: ${value} `, birthplacesPosx, birthplacesPosy+=40); 
+      
+      for (let i = 0; i < 1; i++) {
+        c+=1
+        //fill(10,43,73,c);
+        fill(ballfill[c]);
+        stroke('white');
+        ellipse(birthplacesPosx-50, birthplacesPosy+=20, sqrt(value)/10, sqrt(value)/10);
+      }
 
+    })
   }
 
-  
+  stateDisplayObj.display();
+
 }

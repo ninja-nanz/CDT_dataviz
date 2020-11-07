@@ -1,0 +1,17 @@
+,4
+state_code,PA
+queried_cities,1
+state_cuisines,"        cuisine  count  percentage
+0        Afghan      1    0.009804
+1       African      1    0.009804
+2      American      1    0.009804
+3         Amish      1    0.009804
+4     Argentine      1    0.009804
+..          ...    ...         ...
+97         Thai      1    0.009804
+98      Turkish      1    0.009804
+99   Vegetarian      1    0.009804
+100  Venezuelan      1    0.009804
+101  Vietnamese      1    0.009804
+
+[102 rows x 3 columns]"
