@@ -70,8 +70,28 @@ class Zomato:
             if lev_distance<5:
                 return a['location_suggestions'][0]['id']
             else:
-                return -9999
-
+                return -9999, city_suggested
+            
+    def get_city_restaurant_count(self, city_ID="", cuisines=""):
+        """
+        Takes either query, latitude and longitude or cuisine as input.
+        Returns a list of Restaurant IDs.
+        """
+        #https://developers.zomato.com/api/v2.1/search?entity_id=280&entity_type=city&cuisines=73%2C%2025
+        cuisines = cuisines.strip()
+        cuisines = "%2C".join(cuisines.split(","))
+        
+        self.is_valid_city_id(city_ID)
+        
+        headers = {'Accept': 'application/json', 'user-key': self.user_key}
+        query_str = base_url + "search?" + "entity_id=" + str(city_ID) + "&entity_type=city"\
+                             + "&cuisines=" + str(cuisines)
+        
+        r = (requests.get(query_str, headers=headers).content).decode("utf-8")
+        response_json = json.loads(r)
+        
+        restaurant_count = response_json['results_found']
+        return restaurant_count, response_json, query_str
 
     def get_city_name(self, city_ID):
         """
