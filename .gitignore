@@ -3,8 +3,8 @@
 *.DS_Store
 *.vscode
 *.ipynb_checkpoints
-#data/
-#results/
+data/
+results/
 
 # Byte-compiled / optimized / DLL files
 _pycache_/
