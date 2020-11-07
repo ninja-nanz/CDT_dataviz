@@ -11,6 +11,7 @@ let birthplacesPosx;
 let birthplacesPosy;
 var ObjSortedByTop10;
 let ballfill = ['#0A2B49','#0A2B49','#0E3C5E','#206F96','#4EAACE','#80D0C7','#42B29F','#308474','#124C41','#083F35','#0B231E']
+
 //=========================================================================
 // SETUP CODE
 //=========================================================================
@@ -31,7 +32,7 @@ function setup() {
     }
     console.log(stateData);
 
-  //Input field 
+  //Input field to Type state
     
     input = createInput();
     input.position(190, 90);
@@ -51,16 +52,15 @@ function setup() {
 function createBackground(){
   background('#D45402');
   fill(0, 0, 100)
-  
 }
 
 //=========================================================================
-// SHOW STATE DATA
+// SHOW EACH STATES DATA
 //=========================================================================
 
 function showStateData() {
 
-  const typedState = input.value(); //get state from input
+  const typedState = input.value(); //get state name from input
 
   for (let i = 0; i < stateData.length; i++) {
     var stateName = stateData[i].STATE;
@@ -78,7 +78,7 @@ function showStateData() {
                                               birthplaces = ObjSortedByTop10);
     }
 
-   input.value("");
+   input.value(""); //clears input field
 
   }
 }
@@ -87,7 +87,7 @@ class stateDataDisplay {
   constructor(state, total, birthplaces) {
     this.state = state;
     this.total = total, 
-    this.birthplaces = birthplaces;
+    this.birthplaces = birthplaces; //obj
     this.x = random(width);
     this.y = random(height);
     this.diameter = random(10, 30);
@@ -119,21 +119,18 @@ class stateDataDisplay {
 function draw() { 
 
   createBackground();
-  //let c=100;
-  let c=0;
+ 
+  let c=0; // color increment
 
   if (birthplacesObj !== undefined) {
   
     Object.entries(birthplacesObj).forEach(([key, value]) => {
-      // fill('blue');
-      // ellipse(random(width), random(height), value/5000, value/5000);
       fill('white');
       textSize(20);
       text(`${key}: ${value} `, birthplacesPosx, birthplacesPosy+=40); 
       
       for (let i = 0; i < 1; i++) {
         c+=1
-        //fill(10,43,73,c);
         fill(ballfill[c]);
         stroke('white');
         ellipse(birthplacesPosx-50, birthplacesPosy+=20, sqrt(value)/10, sqrt(value)/10);
