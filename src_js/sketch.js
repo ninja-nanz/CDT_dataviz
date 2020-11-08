@@ -86,7 +86,7 @@ function showStateData() {
 class stateDataDisplay {
   constructor(state, total, birthplaces) {
     this.state = state;
-    this.total = total, 
+    this.total = total;
     this.birthplaces = birthplaces; //obj
     this.x = random(width);
     this.y = random(height);
