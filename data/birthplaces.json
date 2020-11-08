@@ -2,1081 +2,1081 @@
     {
     "name":"Afghanistan",
     "code":"AF", 
-    "flagURL":"/birthplace_flags/Afghanistan.png"
+    "flagURL":"/data/birthplace_flags/Afghanistan.png"
     },
     {
     "name":"Albania",
     "code":"AL",
-    "flagURL":"/birthplace_flags/Albania.png"
+    "flagURL":"/data/birthplace_flags/Albania.png"
     },
     {
     "name":"Algeria",
     "code":"DZ",
-    "flagURL":"/birthplace_flags/Algeria.png"
+    "flagURL":"/data/birthplace_flags/Algeria.png"
     },
     {
     "name":"American Samoa",
     "code":"AS",
-    "flagURL":"/birthplace_flags/AmericanSamoa.png"
+    "flagURL":"/data/birthplace_flags/AmericanSamoa.png"
     },
     {
     "name":"Andorra",
     "code":"AD",
-    "flagURL":"/birthplace_flags/Andorra.png"
+    "flagURL":"/data/birthplace_flags/Andorra.png"
     },
     {
     "name":"Angola",
     "code":"AO",
-    "flagURL":"/birthplace_flags/Angola.png"
+    "flagURL":"/data/birthplace_flags/Angola.png"
     },
     {
     "name":"Anguilla",
     "code":"AI",
-    "flagURL":"/birthplace_flags/Anguilla.png"
+    "flagURL":"/data/birthplace_flags/Anguilla.png"
     },
     {
     "name":"Antarctica",
     "code":"AQ",
-    "flagURL":"/birthplace_flags/Antarctica.png"
+    "flagURL":"/data/birthplace_flags/Antarctica.png"
     },
     {
     "name":"Antigua and Barbuda",
     "code":"AG",
-    "flagURL":"/birthplace_flags/Antigua&Barbuda.png"
+    "flagURL":"/data/birthplace_flags/Antigua&Barbuda.png"
     },
     {
     "name":"Argentina",
     "code":"AR",
-    "flagURL":"/birthplace_flags/Argentina.png"
+    "flagURL":"/data/birthplace_flags/Argentina.png"
     },
     {
     "name":"Armenia",
     "code":"AM",
-    "flagURL":"/birthplace_flags/Armenia.png"
+    "flagURL":"/data/birthplace_flags/Armenia.png"
     },
     {
     "name":"Aruba",
     "code":"AW",
-    "flagURL":"/birthplace_flags/Aruba.png"
+    "flagURL":"/data/birthplace_flags/Aruba.png"
     },
     {
     "name":"Australia",
     "code":"AU",
-    "flagURL":"/birthplace_flags/Australia.png"
+    "flagURL":"/data/birthplace_flags/Australia.png"
     },
     {
     "name":"Austria",
     "code":"AT",
-    "flagURL":"/birthplace_flags/Austria.png"
+    "flagURL":"/data/birthplace_flags/Austria.png"
     },
     {
     "name":"Azerbaijan",
     "code":"AZ",
-    "flagURL":"/birthplace_flags/Azerbijan.png"
+    "flagURL":"/data/birthplace_flags/Azerbijan.png"
     },
     {
     "name":"Bahamas",
     "code":"BS",
-    "flagURL":"/birthplace_flags/Bahamas.png"
+    "flagURL":"/data/birthplace_flags/Bahamas.png"
     },
     {
     "name":"Bahrain",
     "code":"BH",
-    "flagURL":"/birthplace_flags/Bahrain.png"
+    "flagURL":"/data/birthplace_flags/Bahrain.png"
     },
     {
     "name":"Bangladesh",
     "code":"BD",
-    "flagURL":"/birthplace_flags/Bangladesh.png"
+    "flagURL":"/data/birthplace_flags/Bangladesh.png"
     },
     {
     "name":"Barbados",
     "code":"BB",
-    "flagURL":"/birthplace_flags/Barbados.png"
+    "flagURL":"/data/birthplace_flags/Barbados.png"
     },
     {
     "name":"Belarus",
     "code":"BY",
-    "flagURL":"/birthplace_flags/Belarus.png"
+    "flagURL":"/data/birthplace_flags/Belarus.png"
     },
     {
     "name":"Belgium",
     "code":"BE",
-    "flagURL":"/birthplace_flags/Belgium.png"
+    "flagURL":"/data/birthplace_flags/Belgium.png"
     },
     {
     "name":"Belize",
     "code":"BZ",
-    "flagURL":"/birthplace_flags/Belize.png"
+    "flagURL":"/data/birthplace_flags/Belize.png"
     },
     {
     "name":"Benin",
     "code":"BJ",
-    "flagURL":"/birthplace_flags/Benin.png"
+    "flagURL":"/data/birthplace_flags/Benin.png"
     },
     {
     "name":"Bhutan",
     "code":"BT",
-    "flagURL":"/birthplace_flags/Bhutan.png"
+    "flagURL":"/data/birthplace_flags/Bhutan.png"
     },
     {
     "name":"Bolivia",
     "code":"BO",
-    "flagURL":"/birthplace_flags/Bolivia.png"
+    "flagURL":"/data/birthplace_flags/Bolivia.png"
     },
     {
     "name":"Bosnia and Herzegovina",
     "code":"BA",
-    "flagURL":"/birthplace_flags/Bosnia&Herzegovina.png"
+    "flagURL":"/data/birthplace_flags/Bosnia&Herzegovina.png"
     },
     {
     "name":"Botswana",
     "code":"BW",
-    "flagURL":"/birthplace_flags/Botswana.png"
+    "flagURL":"/data/birthplace_flags/Botswana.png"
     },
     {
     "name":"Brazil",
     "code":"BR",
-    "flagURL":"/birthplace_flags/Brazil.png"
+    "flagURL":"/data/birthplace_flags/Brazil.png"
     },
     {
     "name":"Brunei",
     "code":"BN",
-    "flagURL":"/birthplace_flags/Brunei.png"
+    "flagURL":"/data/birthplace_flags/Brunei.png"
     },
     {
     "name":"Bulgaria",
     "code":"BG",
-    "flagURL":"/birthplace_flags/Bulgaria.png"
+    "flagURL":"/data/birthplace_flags/Bulgaria.png"
     },
     {
     "name":"Burkina Faso",
     "code":"BF",
-    "flagURL":"/birthplace_flags/BurkinaFasoo.png"
+    "flagURL":"/data/birthplace_flags/BurkinaFasoo.png"
     },
     {
     "name":"Burundi",
     "code":"BI",
-    "flagURL":"/birthplace_flags/Burundi.png"
+    "flagURL":"/data/birthplace_flags/Burundi.png"
     },
     {
     "name":"Cambodia",
     "code":"KH",
-    "flagURL":"/birthplace_flags/Cambodia.png"
+    "flagURL":"/data/birthplace_flags/Cambodia.png"
     },
     {
     "name":"Cameroon",
     "code":"CM",
-    "flagURL":"/birthplace_flags/Cameroon.png"
+    "flagURL":"/data/birthplace_flags/Cameroon.png"
     },
     {
     "name":"Canada",
     "code":"CA",
-    "flagURL":"/birthplace_flags/Canada.png"
+    "flagURL":"/data/birthplace_flags/Canada.png"
     },
     {
     "name":"Cape Verde",
     "code":"CV",
-    "flagURL":"/birthplace_flags/CapeVerde.png"
+    "flagURL":"/data/birthplace_flags/CapeVerde.png"
     },
     {
     "name":"Central African Republic",
     "code":"CF",
-    "flagURL":"/birthplace_flags/CentralAfricanRepublic.png"
+    "flagURL":"/data/birthplace_flags/CentralAfricanRepublic.png"
     },
     {
     "name":"Chad",
     "code":"TD",
-    "flagURL":"/birthplace_flags/Chad.png"
+    "flagURL":"/data/birthplace_flags/Chad.png"
     },
     {
     "name":"Chile",
     "code":"CL",
-    "flagURL":"/birthplace_flags/Chile.png"
+    "flagURL":"/data/birthplace_flags/Chile.png"
     },
     {
     "name":"China",
     "code":"CN",
-    "flagURL":"/birthplace_flags/China.png"
+    "flagURL":"/data/birthplace_flags/China.png"
     },
     {
     "name":"Christmas Island",
     "code":"CX",
-    "flagURL":"/birthplace_flags/ChristmasIsland.png"
+    "flagURL":"/data/birthplace_flags/ChristmasIsland.png"
     },
     {
     "name":"Cocos (Keeling) Islands",
     "code":"CC",
-    "flagURL":"/birthplace_flags/Cocos(Keeling)Islands.png"
+    "flagURL":"/data/birthplace_flags/Cocos(Keeling)Islands.png"
     },
     {
     "name":"Colombia",
     "code":"CO",
-    "flagURL":"/birthplace_flags/Colombia.png"
+    "flagURL":"/data/birthplace_flags/Colombia.png"
     },
     {
     "name":"Comoros",
     "code":"KM",
-    "flagURL":"/birthplace_flags/Comoros.png"
+    "flagURL":"/data/birthplace_flags/Comoros.png"
     },
     {
     "name":"Congo, The Democratic Republic of the",
     "code":"CD",
-    "flagURL":"/birthplace_flags/DemocraticRepublicOfTheCongo.png"
+    "flagURL":"/data/birthplace_flags/DemocraticRepublicOfTheCongo.png"
     },
     {
     "name":"Cook Islands",
     "code":"CK",
-    "flagURL":"/birthplace_flags/CookIslands.png"
+    "flagURL":"/data/birthplace_flags/CookIslands.png"
     },
     {
     "name":"Costa Rica",
     "code":"CR",
-    "flagURL":"/birthplace_flags/CostaRica.png"
+    "flagURL":"/data/birthplace_flags/CostaRica.png"
     },
     {
     "name":"Cote D'Ivoire",
     "code":"CI",
-    "flagURL":"/birthplace_flags/CôteD'Ivoire.png"
+    "flagURL":"/data/birthplace_flags/CôteD'Ivoire.png"
     },
     {
     "name":"Croatia",
     "code":"HR",
-    "flagURL":"/birthplace_flags/Croatia.png"
+    "flagURL":"/data/birthplace_flags/Croatia.png"
     },
     {
     "name":"Cuba",
     "code":"CU",
-    "flagURL":"/birthplace_flags/Cuba.png"
+    "flagURL":"/data/birthplace_flags/Cuba.png"
     },
     {
     "name":"Cyprus",
     "code":"CY",
-    "flagURL":"/birthplace_flags/Cyprus.png"
+    "flagURL":"/data/birthplace_flags/Cyprus.png"
     },
     {
     "name":"Czech Republic",
     "code":"CZ",
-    "flagURL":"/birthplace_flags/Czechia.png"
+    "flagURL":"/data/birthplace_flags/Czechia.png"
     },
     {
     "name":"Denmark",
     "code":"DK",
-    "flagURL":"/birthplace_flags/Denmark.png"
+    "flagURL":"/data/birthplace_flags/Denmark.png"
     },
     {
     "name":"Djibouti",
     "code":"DJ",
-    "flagURL":"/birthplace_flags/Djibouti.png"
+    "flagURL":"/data/birthplace_flags/Djibouti.png"
     },
     {
     "name":"Dominica",
     "code":"DM",
-    "flagURL":"/birthplace_flags/Dominica.png"
+    "flagURL":"/data/birthplace_flags/Dominica.png"
     },
     {
     "name":"Dominican Republic",
     "code":"DO",
-    "flagURL":"/birthplace_flags/DominicanRepublic.png"
+    "flagURL":"/data/birthplace_flags/DominicanRepublic.png"
     },
     {
     "name":"Ecuador",
     "code":"EC",
-    "flagURL":"/birthplace_flags/Ecuador.png"
+    "flagURL":"/data/birthplace_flags/Ecuador.png"
     },
     {
     "name":"Egypt",
     "code":"EG",
-    "flagURL":"/birthplace_flags/Egypt.png"
+    "flagURL":"/data/birthplace_flags/Egypt.png"
     },
     {
     "name":"El Salvador",
     "code":"SV",
-    "flagURL":"/birthplace_flags/ElSalvador.png"
+    "flagURL":"/data/birthplace_flags/ElSalvador.png"
     },
     {
     "name":"Equatorial Guinea",
     "code":"GQ",
-    "flagURL":"/birthplace_flags/EquatorialGuinea.png"
+    "flagURL":"/data/birthplace_flags/EquatorialGuinea.png"
     },
     {
     "name":"Eritrea",
     "code":"ER",
-    "flagURL":"/birthplace_flags/Eritrea.png"
+    "flagURL":"/data/birthplace_flags/Eritrea.png"
     },
     {
     "name":"Estonia",
     "code":"EE",
-    "flagURL":"/birthplace_flags/Estonia.png"
+    "flagURL":"/data/birthplace_flags/Estonia.png"
     },
     {
     "name":"Ethiopia",
     "code":"ET",
-    "flagURL":"/birthplace_flags/Ethiopia.png"
+    "flagURL":"/data/birthplace_flags/Ethiopia.png"
     },
     {
     "name":"Faroe Islands",
     "code":"FO",
-    "flagURL":"/birthplace_flags/FaroeIslands.png"
+    "flagURL":"/data/birthplace_flags/FaroeIslands.png"
     },
     {
     "name":"Fiji",
     "code":"FJ",
-    "flagURL":"/birthplace_flags/Fiji.png"
+    "flagURL":"/data/birthplace_flags/Fiji.png"
     },
     {
     "name":"Finland",
     "code":"FI",
-    "flagURL":"/birthplace_flags/Finland.png"
+    "flagURL":"/data/birthplace_flags/Finland.png"
     },
     {
     "name":"France",
     "code":"FR",
-    "flagURL":"/birthplace_flags/France.png"
+    "flagURL":"/data/birthplace_flags/France.png"
     },
     {
     "name":"French Guiana",
     "code":"GF",
-    "flagURL":"/birthplace_flags/FrenchGuiana.png"
+    "flagURL":"/data/birthplace_flags/FrenchGuiana.png"
     },
     {
     "name":"French Southern Territories",
     "code":"TF",
-    "flagURL":"/birthplace_flags/FrenchSouthern&AntarcticLand.png"
+    "flagURL":"/data/birthplace_flags/FrenchSouthern&AntarcticLand.png"
     },
     {
     "name":"Gabon",
     "code":"GA",
-    "flagURL":"/birthplace_flags/Gabon.png"
+    "flagURL":"/data/birthplace_flags/Gabon.png"
     },
     {
     "name":"Gambia",
     "code":"GM",
-    "flagURL":"/birthplace_flags/TheGambia.png"
+    "flagURL":"/data/birthplace_flags/TheGambia.png"
     },
     {
     "name":"Georgia",
     "code":"GE",
-    "flagURL":"/birthplace_flags/Georgia.png"
+    "flagURL":"/data/birthplace_flags/Georgia.png"
     },
     {
     "name":"Germany",
     "code":"DE",
-    "flagURL":"/birthplace_flags/Germany.png"
+    "flagURL":"/data/birthplace_flags/Germany.png"
     },
     {
     "name":"Ghana",
     "code":"GH",
-    "flagURL":"/birthplace_flags/Ghana.png"
+    "flagURL":"/data/birthplace_flags/Ghana.png"
     },
     {
     "name":"Greece",
     "code":"GR",
-    "flagURL":"/birthplace_flags/Greece.png"
+    "flagURL":"/data/birthplace_flags/Greece.png"
     },
     {
     "name":"Greenland",
     "code":"GL",
-    "flagURL":"/birthplace_flags/Greenland.png"
+    "flagURL":"/data/birthplace_flags/Greenland.png"
     },
     {
     "name":"Grenada",
     "code":"GD",
-    "flagURL":"/birthplace_flags/Grenada.png"
+    "flagURL":"/data/birthplace_flags/Grenada.png"
     },
     {
     "name":"Guadeloupe",
     "code":"GP",
-    "flagURL":"/birthplace_flags/Guadeloupe.png"
+    "flagURL":"/data/birthplace_flags/Guadeloupe.png"
     },
     {
     "name":"Guam",
     "code":"GU",
-    "flagURL":"/birthplace_flags/Guam.png"
+    "flagURL":"/data/birthplace_flags/Guam.png"
     },
     {
     "name":"Guatemala",
     "code":"GT",
-    "flagURL":"/birthplace_flags/Guatemala.png"
+    "flagURL":"/data/birthplace_flags/Guatemala.png"
     },
     {
     "name":"Guernsey",
     "code":"GG",
-    "flagURL":"/birthplace_flags/Guernsey.png"
+    "flagURL":"/data/birthplace_flags/Guernsey.png"
     },
     {
     "name":"Guinea",
     "code":"GN",
-    "flagURL":"/birthplace_flags/Guinea.png"
+    "flagURL":"/data/birthplace_flags/Guinea.png"
     },
     {
     "name":"Guinea-Bissau",
     "code":"GW",
-    "flagURL":"/birthplace_flags/Guinea-Bissau.png"
+    "flagURL":"/data/birthplace_flags/Guinea-Bissau.png"
     },
     {
     "name":"Guyana",
     "code":"GY",
-    "flagURL":"/birthplace_flags/Guyana.png"
+    "flagURL":"/data/birthplace_flags/Guyana.png"
     },
     {
     "name":"Haiti",
     "code":"HT",
-    "flagURL":"/birthplace_flags/Haiti.png"
+    "flagURL":"/data/birthplace_flags/Haiti.png"
     },
     {
     "name":"Holy See (Vatican City State)",
     "code":"VA",
-    "flagURL":"/birthplace_flags/VaticanCityState.png"
+    "flagURL":"/data/birthplace_flags/VaticanCityState.png"
     },
     {
     "name":"Honduras",
     "code":"HN",
-    "flagURL":"/birthplace_flags/Honduras.png"
+    "flagURL":"/data/birthplace_flags/Honduras.png"
     },
     {
     "name":"Hong Kong",
     "code":"HK",
-    "flagURL":"/birthplace_flags/HongKong.png"
+    "flagURL":"/data/birthplace_flags/HongKong.png"
     },
     {
     "name":"Hungary",
     "code":"HU",
-    "flagURL":"/birthplace_flags/Hungary.png"
+    "flagURL":"/data/birthplace_flags/Hungary.png"
     },
     {
     "name":"Iceland",
     "code":"IS",
-    "flagURL":"/birthplace_flags/Iceland.png"
+    "flagURL":"/data/birthplace_flags/Iceland.png"
     },
     {
     "name":"India",
     "code":"IN",
-    "flagURL":"/birthplace_flags/India.png"
+    "flagURL":"/data/birthplace_flags/India.png"
     },
     {
     "name":"Indonesia",
     "code":"ID",
-    "flagURL":"/birthplace_flags/Indonesia.png"
+    "flagURL":"/data/birthplace_flags/Indonesia.png"
     },
     {
     "name":"Iran, Islamic Republic Of",
     "code":"IR",
-    "flagURL":"/birthplace_flags/Iran.png"
+    "flagURL":"/data/birthplace_flags/Iran.png"
     },
     {
     "name":"Iraq",
     "code":"IQ",
-    "flagURL":"/birthplace_flags/Iraq.png"
+    "flagURL":"/data/birthplace_flags/Iraq.png"
     },
     {
     "name":"Ireland",
     "code":"IE",
-    "flagURL":"/birthplace_flags/Ireland.png"
+    "flagURL":"/data/birthplace_flags/Ireland.png"
     },
     {
     "name":"Isle of Man",
     "code":"IM",
-    "flagURL":"/birthplace_flags/IsleOfMan.png"
+    "flagURL":"/data/birthplace_flags/IsleOfMan.png"
     },
     {
     "name":"Israel",
     "code":"IL",
-    "flagURL":"/birthplace_flags/Israel.png"
+    "flagURL":"/data/birthplace_flags/Israel.png"
     },
     {
     "name":"Italy",
     "code":"IT",
-    "flagURL":"/birthplace_flags/Italy.png"
+    "flagURL":"/data/birthplace_flags/Italy.png"
     },
     {
     "name":"Jamaica",
     "code":"JM",
-    "flagURL":"/birthplace_flags/Jamaica.png"
+    "flagURL":"/data/birthplace_flags/Jamaica.png"
     },
     {
     "name":"Japan",
     "code":"JP",
-    "flagURL":"/birthplace_flags/Japan.png"
+    "flagURL":"/data/birthplace_flags/Japan.png"
     },
     {
     "name":"Jordan",
     "code":"JO",
-    "flagURL":"/birthplace_flags/Jordan.png"
+    "flagURL":"/data/birthplace_flags/Jordan.png"
     },
     {
     "name":"Kazakhstan",
     "code":"KZ",
-    "flagURL":"/birthplace_flags/Kazakhstan.png"
+    "flagURL":"/data/birthplace_flags/Kazakhstan.png"
     },
     {
     "name":"Kenya",
     "code":"KE",
-    "flagURL":"/birthplace_flags/Kenya.png"
+    "flagURL":"/data/birthplace_flags/Kenya.png"
     },
     {
     "name":"Kiribati",
     "code":"KI",
-    "flagURL":"/birthplace_flags/Kiribati.png"
+    "flagURL":"/data/birthplace_flags/Kiribati.png"
     },
     {
     "name":"Korea, Democratic People'S Republic of",
     "code":"KP",
-    "flagURL":"/birthplace_flags/NorthKorea.png"
+    "flagURL":"/data/birthplace_flags/NorthKorea.png"
     },
     {
     "name":"Korea, Republic of",
     "code":"KR",
-    "flagURL":"/birthplace_flags/SouthKorea.png"
+    "flagURL":"/data/birthplace_flags/SouthKorea.png"
     },
     {
     "name":"Kuwait",
     "code":"KW",
-    "flagURL":"/birthplace_flags/Kuwait.png"
+    "flagURL":"/data/birthplace_flags/Kuwait.png"
     },
     {
     "name":"Kyrgyzstan",
     "code":"KG",
-    "flagURL":"/birthplace_flags/Kyrgyzstan.png"
+    "flagURL":"/data/birthplace_flags/Kyrgyzstan.png"
     },
     {
     "name":"Lao People'S Democratic Republic",
     "code":"LA",
-    "flagURL":"/birthplace_flags/Laos.png"
+    "flagURL":"/data/birthplace_flags/Laos.png"
     },
     {
     "name":"Latvia",
     "code":"LV",
-    "flagURL":"/birthplace_flags/Latvia.png"
+    "flagURL":"/data/birthplace_flags/Latvia.png"
     },
     {
     "name":"Lebanon",
     "code":"LB",
-    "flagURL":"/birthplace_flags/Lebanon.png"
+    "flagURL":"/data/birthplace_flags/Lebanon.png"
     },
     {
     "name":"Lesotho",
     "code":"LS",
-    "flagURL":"/birthplace_flags/Lesotho.png"
+    "flagURL":"/data/birthplace_flags/Lesotho.png"
     },
     {
     "name":"Liberia",
     "code":"LR",
-    "flagURL":"/birthplace_flags/Liberia.png"
+    "flagURL":"/data/birthplace_flags/Liberia.png"
     },
     {
     "name":"Libyan Arab Jamahiriya",
     "code":"LY",
-    "flagURL":"/birthplace_flags/Libya.png"
+    "flagURL":"/data/birthplace_flags/Libya.png"
     },
     {
     "name":"Liechtenstein",
     "code":"LI",
-    "flagURL":"/birthplace_flags/Liechtenstein.png"
+    "flagURL":"/data/birthplace_flags/Liechtenstein.png"
     },
     {
     "name":"Lithuania",
     "code":"LT",
-    "flagURL":"/birthplace_flags/Lithuania.png"
+    "flagURL":"/data/birthplace_flags/Lithuania.png"
     },
     {
     "name":"Luxembourg",
     "code":"LU",
-    "flagURL":"/birthplace_flags/Luxembourg.png"
+    "flagURL":"/data/birthplace_flags/Luxembourg.png"
     },
     {
     "name":"Macao",
     "code":"MO",
-    "flagURL":"/birthplace_flags/Macao.png"
+    "flagURL":"/data/birthplace_flags/Macao.png"
     },
     {
     "name":"Macedonia, The Former Yugoslav Republic of",
     "code":"MK",
-    "flagURL":"/birthplace_flags/Macedonia.png"
+    "flagURL":"/data/birthplace_flags/Macedonia.png"
     },
     {
     "name":"Madagascar",
     "code":"MG",
-    "flagURL":"/birthplace_flags/Madagascar.png"
+    "flagURL":"/data/birthplace_flags/Madagascar.png"
     },
     {
     "name":"Malawi",
     "code":"MW",
-    "flagURL":"/birthplace_flags/Malawi.png"
+    "flagURL":"/data/birthplace_flags/Malawi.png"
     },
     {
     "name":"Malaysia",
     "code":"MY",
-    "flagURL":"/birthplace_flags/Malaysia.png"
+    "flagURL":"/data/birthplace_flags/Malaysia.png"
     },
     {
     "name":"Maldives",
     "code":"MV",
-    "flagURL":"/birthplace_flags/Maldives.png"
+    "flagURL":"/data/birthplace_flags/Maldives.png"
     },
     {
     "name":"Mali",
     "code":"ML",
-    "flagURL":"/birthplace_flags/Mali.png"
+    "flagURL":"/data/birthplace_flags/Mali.png"
     },
     {
     "name":"Malta",
     "code":"MT",
-    "flagURL":"/birthplace_flags/Malta.png"
+    "flagURL":"/data/birthplace_flags/Malta.png"
     },
     {
     "name":"Marshall Islands",
     "code":"MH",
-    "flagURL":"/birthplace_flags/MarshallIslands.png"
+    "flagURL":"/data/birthplace_flags/MarshallIslands.png"
     },
     {
     "name":"Mauritania",
     "code":"MR",
-    "flagURL":"/birthplace_flags/Mauritania.png"
+    "flagURL":"/data/birthplace_flags/Mauritania.png"
     },
     {
     "name":"Mauritius",
     "code":"MU",
-    "flagURL":"/birthplace_flags/Mauritius.png"
+    "flagURL":"/data/birthplace_flags/Mauritius.png"
     },
     {
     "name":"Mexico",
     "code":"MX",
-    "flagURL":"/birthplace_flags/Mexico.png"
+    "flagURL":"/data/birthplace_flags/Mexico.png"
     },
     {
     "name":"Micronesia, Federated States of",
     "code":"FM",
-    "flagURL":"/birthplace_flags/Micronesia.png"
+    "flagURL":"/data/birthplace_flags/Micronesia.png"
     },
     {
     "name":"Moldova, Republic of",
     "code":"MD",
-    "flagURL":"/birthplace_flags/Moldova.png"
+    "flagURL":"/data/birthplace_flags/Moldova.png"
     },
     {
     "name":"Monaco",
     "code":"MC",
-    "flagURL":"/birthplace_flags/Monaco.png"
+    "flagURL":"/data/birthplace_flags/Monaco.png"
     },
     {
     "name":"Mongolia",
     "code":"MN",
-    "flagURL":"/birthplace_flags/Mongolia.png"
+    "flagURL":"/data/birthplace_flags/Mongolia.png"
     },
     {
     "name":"Morocco",
     "code":"MA",
-    "flagURL":"/birthplace_flags/Morocco.png"
+    "flagURL":"/data/birthplace_flags/Morocco.png"
     },
     {
     "name":"Mozambique",
     "code":"MZ",
-    "flagURL":"/birthplace_flags/Mozambique.png"
+    "flagURL":"/data/birthplace_flags/Mozambique.png"
     },
     {
     "name":"Myanmar",
     "code":"MM",
-    "flagURL":"/birthplace_flags/Myanmar.png"
+    "flagURL":"/data/birthplace_flags/Myanmar.png"
     },
     {
     "name":"Namibia",
     "code":"NA",
-    "flagURL":"/birthplace_flags/Namibia.png"
+    "flagURL":"/data/birthplace_flags/Namibia.png"
     },
     {
     "name":"Nauru",
     "code":"NR",
-    "flagURL":"/birthplace_flags/Nauru.png"
+    "flagURL":"/data/birthplace_flags/Nauru.png"
     },
     {
     "name":"Nepal",
     "code":"NP",
-    "flagURL":"/birthplace_flags/Nepal.png"
+    "flagURL":"/data/birthplace_flags/Nepal.png"
     },
     {
     "name":"Netherlands",
     "code":"NL",
-    "flagURL":"/birthplace_flags/Netherlands.png"
+    "flagURL":"/data/birthplace_flags/Netherlands.png"
     },
     {
     "name":"Netherlands Antilles",
     "code":"AN",
-    "flagURL":"/birthplace_flags/NetherlandsAntilles.png"
+    "flagURL":"/data/birthplace_flags/NetherlandsAntilles.png"
     },
     {
     "name":"New Caledonia",
     "code":"NC",
-    "flagURL":"/birthplace_flags/NewCaledonia.png"
+    "flagURL":"/data/birthplace_flags/NewCaledonia.png"
     },
     {
     "name":"New Zealand",
     "code":"NZ",
-    "flagURL":"/birthplace_flags/NewZealand.png"
+    "flagURL":"/data/birthplace_flags/NewZealand.png"
     },
     {
     "name":"Nicaragua",
     "code":"NI",
-    "flagURL":"/birthplace_flags/Nicaragua.png"
+    "flagURL":"/data/birthplace_flags/Nicaragua.png"
     },
     {
     "name":"Niger",
     "code":"NE",
-    "flagURL":"/birthplace_flags/Niger.png"
+    "flagURL":"/data/birthplace_flags/Niger.png"
     },
     {
     "name":"Nigeria",
     "code":"NG",
-    "flagURL":"/birthplace_flags/Nigeria.png"
+    "flagURL":"/data/birthplace_flags/Nigeria.png"
     },
     {
     "name":"Niue",
     "code":"NU",
-    "flagURL":"/birthplace_flags/Niue.png"
+    "flagURL":"/data/birthplace_flags/Niue.png"
     },
     {
     "name":"Norfolk Island",
     "code":"NF",
-    "flagURL":"/birthplace_flags/NorfolkIsland.png"
+    "flagURL":"/data/birthplace_flags/NorfolkIsland.png"
     },
     {
     "name":"Norway",
     "code":"NO",
-    "flagURL":"/birthplace_flags/Norway.png"
+    "flagURL":"/data/birthplace_flags/Norway.png"
     },
     {
     "name":"Oman",
     "code":"OM",
-    "flagURL":"/birthplace_flags/Oman.png"
+    "flagURL":"/data/birthplace_flags/Oman.png"
     },
     {
     "name":"Pakistan",
     "code":"PK",
-    "flagURL":"/birthplace_flags/Pakistan.png"
+    "flagURL":"/data/birthplace_flags/Pakistan.png"
     },
     {
     "name":"Palau",
     "code":"PW",
-    "flagURL":"/birthplace_flags/Palau.png"
+    "flagURL":"/data/birthplace_flags/Palau.png"
     },
     {
     "name":"Palestinian Territory, Occupied",
     "code":"PS",
-    "flagURL":"/birthplace_flags/Palestine.png"
+    "flagURL":"/data/birthplace_flags/Palestine.png"
     },
     {
     "name":"Panama",
     "code":"PA",
-    "flagURL":"/birthplace_flags/Panama.png"
+    "flagURL":"/data/birthplace_flags/Panama.png"
     },
     {
     "name":"Papua New Guinea",
     "code":"PG",
-    "flagURL":"/birthplace_flags/PapuaNewGuinea.png"
+    "flagURL":"/data/birthplace_flags/PapuaNewGuinea.png"
     },
     {
     "name":"Paraguay",
     "code":"PY",
-    "flagURL":"/birthplace_flags/Paraguay.png"
+    "flagURL":"/data/birthplace_flags/Paraguay.png"
     },
     {
     "name":"Peru",
     "code":"PE",
-    "flagURL":"/birthplace_flags/Peru.png"
+    "flagURL":"/data/birthplace_flags/Peru.png"
     },
     {
     "name":"Philippines",
     "code":"PH",
-    "flagURL":"/birthplace_flags/Philippines.png"
+    "flagURL":"/data/birthplace_flags/Philippines.png"
     },
     {
     "name":"Poland",
     "code":"PL",
-    "flagURL":"/birthplace_flags/Poland.png"
+    "flagURL":"/data/birthplace_flags/Poland.png"
     },
     {
     "name":"Portugal",
     "code":"PT",
-    "flagURL":"/birthplace_flags/Portugal.png"
+    "flagURL":"/data/birthplace_flags/Portugal.png"
     },
     {
     "name":"Puerto Rico",
     "code":"PR",
-    "flagURL":"/birthplace_flags/PuertoRico.png"
+    "flagURL":"/data/birthplace_flags/PuertoRico.png"
     },
     {
     "name":"Qatar",
     "code":"QA",
-    "flagURL":"/birthplace_flags/Qatar.png"
+    "flagURL":"/data/birthplace_flags/Qatar.png"
     },
     {
     "name":"Romania",
     "code":"RO",
-    "flagURL":"/birthplace_flags/Romania.png"
+    "flagURL":"/data/birthplace_flags/Romania.png"
     },
     {
     "name":"Russian Federation",
     "code":"RU",
-    "flagURL":"/birthplace_flags/Russia.png"
+    "flagURL":"/data/birthplace_flags/Russia.png"
     },
     {
     "name":"Rwanda",
     "code":"RW",
-    "flagURL":"/birthplace_flags/Rwanda.png"
+    "flagURL":"/data/birthplace_flags/Rwanda.png"
     },
     {
     "name":"Saint Kitts and Nevis",
     "code":"KN",
-    "flagURL":"/birthplace_flags/SaintKitts&Nevis.png"
+    "flagURL":"/data/birthplace_flags/SaintKitts&Nevis.png"
     },
     {
     "name":"Saint Lucia",
     "code":"LC",
-    "flagURL":"/birthplace_flags/SaintLucia.png"
+    "flagURL":"/data/birthplace_flags/SaintLucia.png"
     },
     {
     "name":"Saint Vincent and the Grenadines",
     "code":"VC",
-    "flagURL":"/birthplace_flags/SaintVincent&TheGrenadines.png"
+    "flagURL":"/data/birthplace_flags/SaintVincent&TheGrenadines.png"
     },
     {
     "name":"Samoa",
     "code":"WS",
-    "flagURL":"/birthplace_flags/AmericanSamoa.png"
+    "flagURL":"/data/birthplace_flags/AmericanSamoa.png"
     },
     {
     "name":"San Marino",
     "code":"SM",
-    "flagURL":"/birthplace_flags/SanMarino.png"
+    "flagURL":"/data/birthplace_flags/SanMarino.png"
     },
     {
     "name":"Sao Tome and Principe",
     "code":"ST",
-    "flagURL":"/birthplace_flags/SãoTomé&Príncipe.png"
+    "flagURL":"/data/birthplace_flags/SãoTomé&Príncipe.png"
     },
     {
     "name":"Saudi Arabia",
     "code":"SA",
-    "flagURL":"/birthplace_flags/SaudiArabia.png"
+    "flagURL":"/data/birthplace_flags/SaudiArabia.png"
     },
     {
     "name":"Senegal",
     "code":"SN",
-    "flagURL":"/birthplace_flags/Senegal.png"
+    "flagURL":"/data/birthplace_flags/Senegal.png"
     },
     {
     "name":"Serbia and Montenegro",
     "code":"CS",
-    "flagURL":"/birthplace_flags/Serbia.png"
+    "flagURL":"/data/birthplace_flags/Serbia.png"
     },
     {
     "name":"Seychelles",
     "code":"SC",
-    "flagURL":"/birthplace_flags/Seychelles.png"
+    "flagURL":"/data/birthplace_flags/Seychelles.png"
     },
     {
     "name":"Sierra Leone",
     "code":"SL",
-    "flagURL":"/birthplace_flags/SierraLeone.png"
+    "flagURL":"/data/birthplace_flags/SierraLeone.png"
     },
     {
     "name":"Singapore",
     "code":"SG",
-    "flagURL":"/birthplace_flags/Singapore.png"
+    "flagURL":"/data/birthplace_flags/Singapore.png"
     },
     {
     "name":"Slovakia",
     "code":"SK",
-    "flagURL":"/birthplace_flags/Slovakia.png"
+    "flagURL":"/data/birthplace_flags/Slovakia.png"
     },
     {
     "name":"Slovenia",
     "code":"SI",
-    "flagURL":"/birthplace_flags/Slovenia.png"
+    "flagURL":"/data/birthplace_flags/Slovenia.png"
     },
     {
     "name":"Solomon Islands",
     "code":"SB",
-    "flagURL":"/birthplace_flags/SolomonIslands.png"
+    "flagURL":"/data/birthplace_flags/SolomonIslands.png"
     },
     {
     "name":"Somalia",
     "code":"SO",
-    "flagURL":"/birthplace_flags/Somalia.png"
+    "flagURL":"/data/birthplace_flags/Somalia.png"
     },
     {
     "name":"South Africa",
     "code":"ZA",
-    "flagURL":"/birthplace_flags/SouthAfrica.png"
+    "flagURL":"/data/birthplace_flags/SouthAfrica.png"
     },
     {
     "name":"Spain",
     "code":"ES",
-    "flagURL":"/birthplace_flags/Spain.png"
+    "flagURL":"/data/birthplace_flags/Spain.png"
     },
     {
     "name":"Sri Lanka",
     "code":"LK",
-    "flagURL":"/birthplace_flags/SriLanka.png"
+    "flagURL":"/data/birthplace_flags/SriLanka.png"
     },
     {
     "name":"Sudan",
     "code":"SD",
-    "flagURL":"/birthplace_flags/Sudan.png"
+    "flagURL":"/data/birthplace_flags/Sudan.png"
     },
     {
     "name":"Suriname",
     "code":"SR",
-    "flagURL":"/birthplace_flags/Suriname.png"
+    "flagURL":"/data/birthplace_flags/Suriname.png"
     },
     {
     "name":"Swaziland",
     "code":"SZ",
-    "flagURL":"/birthplace_flags/Swaziland.png"
+    "flagURL":"/data/birthplace_flags/Swaziland.png"
     },
     {
     "name":"Sweden",
     "code":"SE",
-    "flagURL":"/birthplace_flags/Sweden.png"
+    "flagURL":"/data/birthplace_flags/Sweden.png"
     },
     {
     "name":"Switzerland",
     "code":"CH",
-    "flagURL":"/birthplace_flags/Switzerland.png"
+    "flagURL":"/data/birthplace_flags/Switzerland.png"
     },
     {
     "name":"Syrian Arab Republic",
     "code":"SY",
-    "flagURL":"/birthplace_flags/Syria.png"
+    "flagURL":"/data/birthplace_flags/Syria.png"
     },
     {
     "name":"Taiwan",
     "code":"TW",
-    "flagURL":"/birthplace_flags/Taiwan.png"
+    "flagURL":"/data/birthplace_flags/Taiwan.png"
     },
     {
     "name":"Tajikistan",
     "code":"TJ",
-    "flagURL":"/birthplace_flags/Tajikistan.png"
+    "flagURL":"/data/birthplace_flags/Tajikistan.png"
     },
     {
     "name":"Tanzania, United Republic of",
     "code":"TZ",
-    "flagURL":"/birthplace_flags/Tanzania.png"
+    "flagURL":"/data/birthplace_flags/Tanzania.png"
     },
     {
     "name":"Thailand",
     "code":"TH",
-    "flagURL":"/birthplace_flags/Thailand.png"
+    "flagURL":"/data/birthplace_flags/Thailand.png"
     },
     {
     "name":"Timor-Leste",
     "code":"TL",
-    "flagURL":"/birthplace_flags/Timor-Leste.png"
+    "flagURL":"/data/birthplace_flags/Timor-Leste.png"
     },
     {
     "name":"Togo",
     "code":"TG",
-    "flagURL":"/birthplace_flags/Togo.png"
+    "flagURL":"/data/birthplace_flags/Togo.png"
     },
     {
     "name":"Tokelau",
     "code":"TK",
-    "flagURL":"/birthplace_flags/Tokelau.png"
+    "flagURL":"/data/birthplace_flags/Tokelau.png"
     },
     {
     "name":"Tonga",
     "code":"TO",
-    "flagURL":"/birthplace_flags/Tonga.png"
+    "flagURL":"/data/birthplace_flags/Tonga.png"
     },
     {
     "name":"Trinidad and Tobago",
     "code":"TT",
-    "flagURL":"/birthplace_flags/Trinidad&Tobago.png"
+    "flagURL":"/data/birthplace_flags/Trinidad&Tobago.png"
     },
     {
     "name":"Tunisia",
     "code":"TN",
-    "flagURL":"/birthplace_flags/Tunisia.png"
+    "flagURL":"/data/birthplace_flags/Tunisia.png"
     },
     {
     "name":"Turkey",
     "code":"TR",
-    "flagURL":"/birthplace_flags/Turkey.png"
+    "flagURL":"/data/birthplace_flags/Turkey.png"
     },
     {
     "name":"Turkmenistan",
     "code":"TM",
-    "flagURL":"/birthplace_flags/Turkmenistan.png"
+    "flagURL":"/data/birthplace_flags/Turkmenistan.png"
     },
     {
     "name":"Tuvalu",
     "code":"TV",
-    "flagURL":"/birthplace_flags/Tuvalu.png"
+    "flagURL":"/data/birthplace_flags/Tuvalu.png"
     },
     {
     "name":"Uganda",
     "code":"UG",
-    "flagURL":"/birthplace_flags/Uganda.png"
+    "flagURL":"/data/birthplace_flags/Uganda.png"
     },
     {
     "name":"Ukraine",
     "code":"UA",
-    "flagURL":"/birthplace_flags/Ukraine.png"
+    "flagURL":"/data/birthplace_flags/Ukraine.png"
     },
     {
     "name":"United Arab Emirates",
     "code":"AE",
-    "flagURL":"/birthplace_flags/UnitedArabEmirates.png"
+    "flagURL":"/data/birthplace_flags/UnitedArabEmirates.png"
     },
     {
     "name":"United Kingdom",
     "code":"GB",
-    "flagURL":"/birthplace_flags/UnitedKingdom.png"
+    "flagURL":"/data/birthplace_flags/UnitedKingdom.png"
     },
     {
     "name":"United States",
     "code":"US",
-    "flagURL":"/birthplace_flags/USA.png"
+    "flagURL":"/data/birthplace_flags/USA.png"
     },
     {
     "name":"Uruguay",
     "code":"UY",
-    "flagURL":"/birthplace_flags/Uruguay.png"
+    "flagURL":"/data/birthplace_flags/Uruguay.png"
     },
     {
     "name":"Uzbekistan",
     "code":"UZ",
-    "flagURL":"/birthplace_flags/Uzbekistan.png"
+    "flagURL":"/data/birthplace_flags/Uzbekistan.png"
     },
     {
     "name":"Vanuatu",
     "code":"VU",
-    "flagURL":"/birthplace_flags/Vanuatu.png"
+    "flagURL":"/data/birthplace_flags/Vanuatu.png"
     },
     {
     "name":"Venezuela",
     "code":"VE",
-    "flagURL":"/birthplace_flags/Venezuela.png"
+    "flagURL":"/data/birthplace_flags/Venezuela.png"
     },
     {
     "name":"Vietnam",
     "code":"VN",
-    "flagURL":"/birthplace_flags/Vietnam.png"
+    "flagURL":"/data/birthplace_flags/Vietnam.png"
     },
     {
     "name":"Yemen",
     "code":"YE",
-    "flagURL":"/birthplace_flags/Yemen.png"
+    "flagURL":"/data/birthplace_flags/Yemen.png"
     },
     {
     "name":"Zambia",
     "code":"ZM",
-    "flagURL":"/birthplace_flags/Zambia.png"
+    "flagURL":"/data/birthplace_flags/Zambia.png"
     },
     {
     "name":"Zimbabwe",
     "code":"ZW",
-    "flagURL":"/birthplace_flags/Zimbabwe.png"
+    "flagURL":"/data/birthplace_flags/Zimbabwe.png"
     }
 ]

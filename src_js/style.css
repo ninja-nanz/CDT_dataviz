@@ -7,13 +7,17 @@ html, body {
   font-weight: bold;
 }
 
-canvas {
-  display: block;
+
+
+h1 {
+  color: #292929;
+  font-size: 44px;
+  width: 500px;
 }
 
 h2 {
   color: rgb(88, 1, 1);
-  margin-left: 200px;
+  font-size: 20px;
   
 }
 
@@ -23,8 +27,10 @@ h5 {
 }
 
 p {
-  margin-left: 200px;
-  font-size: 20px;
+  width: 500px;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
 }
 
 button {
@@ -52,7 +58,7 @@ input {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
-  border: none;
+  
 }
 
 button:focus, input:focus{

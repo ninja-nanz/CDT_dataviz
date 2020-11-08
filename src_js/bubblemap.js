@@ -15,7 +15,7 @@ let stateShow = [1,0,0,0,0,0,0,0,0,0,0,0,1,
                  1,0,0,0,0,0,0,0,1,0,0,0,0];
 
 
-let bubblemapObj; // map object
+//let bubblemapObj; // map object
 let eachStateBubbleObj // 
 let bubblesArr = []; //array of all bubble
 let s = 50; //size 
@@ -25,7 +25,7 @@ let counter = 0;
 
 
 //=========================================================================
-// SETUP CODE
+// SETUP CODE -> CALLED ON SKETCH.JS
 //=========================================================================
 
 
@@ -53,7 +53,7 @@ class bubbleMap {
     
 
     drawGrid() {
-        translate((width-hmax*s)*0.5, (height-vmax*s)*0.5);
+        translate((width-hmax*s)*.17, (height-vmax*s)*0.3);
         
         
         for(let y=0; y<vmax; y++) {
@@ -95,10 +95,10 @@ class stateBubble {
    
 
     display() {
-        noFill();
-        stroke(this.col);
+        fill(this.col)
+        stroke("white");
         ellipse(this.x*s*1.07, this.y*s*0.9, s, s);   
-        fill(this.col);
+        fill(75);
         noStroke();
         text(stateNames[counter], this.x*s*1.07-textWidth(stateNames[counter])*0.5, this.y*s*0.9+10);
 
@@ -116,7 +116,6 @@ class stateBubble {
 
 function mousePressed() {
     for (var i = 0; i < bubblesArr.length; i++ ){
-        console.log(bubblesArr[i]);
         bubblesArr[i].clicked();
     }
     
