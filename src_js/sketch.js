@@ -92,17 +92,50 @@ function createMousePressedFunction(stateInfo) {
 
   function fun(info) {
 
+    // Plot the title of extra info
     background('#FFF8EE');
     noStroke();
     fill(75);
     textSize(30);
     text(info.state_name, windowWidth /2 + 500, 200);
     textSize(20);
-    text("Total immigrant population: " + info.total, windowWidth /2 - 500, 20);
     
-    // birthplacesObj = this.birthplaces;
-    // birthplacesPosx = windowWidth - 600;
-    // birthplacesPosy = 0;     
+    // Plot the immigrant population per state
+    plotPopulationBars(info)
+  
+  }
+}
+
+function plotPopulationBars(info) {
+  let topList = ["top1", "top2", "top3", "top4", "top5", 
+                 "top6", "top7", "top8", "top9", "top10"]
+
+  text("Total immigrant population: " + info.total_population, 
+                                      windowWidth - 500, 250);
+
+  birthplacesPosx = windowWidth - 400;
+  birthplacesPosy = 300;
+  for (let i = 0; i < topList.length; i++) {
+    let population_perc = info[topList[i]].population / info.total_population
+    let restaurant_perc = info[topList[i]].counts / info.total_restaurants
+    let country = info[topList[i]].country
+
+    fill(bubbleColorClick);
+    stroke('white');
+    // country names
+    textSize(16);
+    textAlign(RIGHT);
+    text(country, birthplacesPosx-10, birthplacesPosy+=60); 
+
+    // population bars
+    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*1000, 35);
+    noFill();
+    noStroke();
+    rect(birthplacesPosx , birthplacesPosy, 0, 0);
+
+    // restaurant bars
+    fill(bubbleColorMain);
+    rect(birthplacesPosx+30, birthplacesPosy-=20, restaurant_perc*1000, 35);
   }
 }
 
