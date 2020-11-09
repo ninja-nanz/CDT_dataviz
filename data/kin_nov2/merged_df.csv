@@ -1,0 +1,491 @@
+,state_code,country,population,top,counts,cuisine_names
+0,AK,Philippines,18666,top1,3.0,Philippines
+1,AK,Mexico,4157,top2,59.0,"Mexico, Taco, Tex-Mex"
+2,AK,Korea,3589,top3,23.0,Korea
+3,AK,Thailand,2867,top4,35.0,Thailand
+4,AK,Canada,2843,top5,0.0,Canada
+5,AK,Russia,1726,top6,0.0,Russia
+6,AK,Germany,1477,top7,1.0,Germany
+7,AK,Dominican Republic,1433,top8,0.0,Dominican Republic
+8,AK,"Oceania, n.e.c.",1329,top9,0.0,"Oceania, n.e.c."
+9,AK,Laos,1288,top10,0.0,Laos
+10,AL,Mexico,49403,top1,434.0,"Mexico, Taco, Tex-Mex"
+11,AL,Guatemala,11611,top2,453.0,Guatemala
+12,AL,Korea,10003,top3,24.0,Korea
+13,AL,India,9276,top4,21.0,India
+14,AL,China,8775,top5,322.0,China
+15,AL,Germany,6436,top6,12.0,Germany
+16,AL,Vietnam,6056,top7,15.0,Vietnam
+17,AL,Philippines,4752,top8,0.0,Philippines
+18,AL,Honduras,3344,top9,5.0,South America
+19,AL,Canada,3229,top10,0.0,Canada
+20,AR,Mexico,59287,top1,203.0,"Mexico, Taco, Tex-Mex"
+21,AR,El Salvador,13514,top2,0.0,El Salvador
+22,AR,India,8282,top3,7.0,India
+23,AR,"Oceania, n.e.c.",5098,top4,0.0,"Oceania, n.e.c."
+24,AR,Guatemala,4741,top5,206.0,Guatemala
+25,AR,Vietnam,4174,top6,13.0,Vietnam
+26,AR,China,4087,top7,85.0,China
+27,AR,Philippines,3156,top8,0.0,Philippines
+28,AR,Laos,2920,top9,0.0,Laos
+29,AR,Germany,2697,top10,4.0,Germany
+30,AZ,Mexico,513583,top1,1309.0,"Mexico, Taco, Tex-Mex"
+31,AZ,Canada,42798,top2,1.0,Canada
+32,AZ,India,40183,top3,81.0,India
+33,AZ,Philippines,30870,top4,8.0,Philippines
+34,AZ,China,22644,top5,474.0,China
+35,AZ,Vietnam,20732,top6,79.0,Vietnam
+36,AZ,Germany,15132,top7,13.0,Germany
+37,AZ,Guatemala,13682,top8,1355.0,Guatemala
+38,AZ,Korea,11167,top9,37.0,Korea
+39,AZ,Iraq,10733,top10,69.0,Iraq
+40,CA,Mexico,4140352,top1,149738.0,"Mexico, Taco, Tex-Mex"
+41,CA,Philippines,841143,top2,7612.0,Philippines
+42,CA,China,639505,top3,89359.0,China
+43,CA,Vietnam,514856,top4,27086.0,Vietnam
+44,CA,India,486876,top5,18250.0,India
+45,CA,El Salvador,437016,top6,2545.0,El Salvador
+46,CA,Korea,323169,top7,23175.0,Korea
+47,CA,Guatemala,276542,top8,163570.0,Guatemala
+48,CA,Iran,205396,top9,716.0,Iran
+49,CA,Taiwan,179867,top10,1731.0,Taiwan
+50,CO,Mexico,228598,top1,1141.0,"Mexico, Taco, Tex-Mex"
+51,CO,India,21981,top2,81.0,India
+52,CO,China,18822,top3,432.0,China
+53,CO,Vietnam,17685,top4,160.0,Vietnam
+54,CO,Germany,15476,top5,26.0,Germany
+55,CO,Korea,14915,top6,40.0,Korea
+56,CO,Canada,14105,top7,0.0,Canada
+57,CO,Philippines,11007,top8,7.0,Philippines
+58,CO,El Salvador,9765,top9,1.0,El Salvador
+59,CO,Ethiopia,9513,top10,20.0,Ethiopia
+60,CT,India,41480,top1,60.0,India
+61,CT,Jamaica,36197,top2,19.0,Jamaica
+62,CT,Mexico,26909,top3,184.0,"Mexico, Taco, Tex-Mex"
+63,CT,Poland,24898,top4,3.0,Poland
+64,CT,Dominican Republic,21821,top5,2.0,Dominican Republic
+65,CT,China,20996,top6,470.0,China
+66,CT,Ecuador,19692,top7,0.0,Ecuador
+67,CT,Italy,17375,top8,1509.0,"Italy, Pizza"
+68,CT,Brazil,16884,top9,11.0,Brazil
+69,CT,Guatemala,15455,top10,280.0,Guatemala
+70,DC,El Salvador,12238,top1,0.0,El Salvador
+71,DC,Ethiopia,5815,top2,34.0,Ethiopia
+72,DC,Mexico,4166,top3,129.0,"Mexico, Taco, Tex-Mex"
+73,DC,China,3646,top4,147.0,China
+74,DC,Guatemala,3303,top5,201.0,Guatemala
+75,DC,India,2984,top6,61.0,India
+76,DC,France,2362,top7,85.0,"France, Fondue, Crepes"
+77,DC,Jamaica,2360,top8,2.0,Jamaica
+78,DC,Philippines,2258,top9,1.0,Philippines
+79,DC,Canada,2172,top10,0.0,Canada
+80,DE,Mexico,15683,top1,276.0,"Mexico, Taco, Tex-Mex"
+81,DE,India,11434,top2,94.0,India
+82,DE,China,5816,top3,895.0,China
+83,DE,Guatemala,4652,top4,403.0,Guatemala
+84,DE,Philippines,3307,top5,4.0,Philippines
+85,DE,Haiti,3048,top6,117.0,Haiti
+86,DE,Jamaica,2198,top7,32.0,Jamaica
+87,DE,Kenya,2027,top8,44.0,Other Middle Africa
+88,DE,Dominican Republic,1996,top9,2.0,Dominican Republic
+89,DE,Korea,1834,top10,47.0,Korea
+90,FL,Cuba,970958,top1,918.0,Cuba
+91,FL,Haiti,325644,top2,1981.0,Haiti
+92,FL,Mexico,268587,top3,1774.0,"Mexico, Taco, Tex-Mex"
+93,FL,Colombia,262304,top4,299.0,Colombia
+94,FL,Jamaica,215622,top5,162.0,Jamaica
+95,FL,Venezuela,160217,top6,114.0,Venezuela
+96,FL,Dominican Republic,125356,top7,91.0,Dominican Republic
+97,FL,Canada,111793,top8,1.0,Canada
+98,FL,Nicaragua,105077,top9,75.0,Nicaragua
+99,FL,Honduras,101324,top10,990.0,South America
+100,GA,Mexico,254885,top1,1103.0,"Mexico, Taco, Tex-Mex"
+101,GA,India,89194,top2,172.0,India
+102,GA,Korea,43260,top3,155.0,Korea
+103,GA,Jamaica,40264,top4,49.0,Jamaica
+104,GA,Vietnam,37689,top5,95.0,Vietnam
+105,GA,China,33508,top6,994.0,China
+106,GA,Guatemala,33173,top7,1325.0,Guatemala
+107,GA,El Salvador,27032,top8,3.0,El Salvador
+108,GA,Nigeria,23422,top9,62.0,Nigeria
+109,GA,Colombia,21723,top10,10.0,Colombia
+110,IA,Mexico,42190,top1,356.0,"Mexico, Taco, Tex-Mex"
+111,IA,China,10019,top2,219.0,China
+112,IA,India,9913,top3,25.0,India
+113,IA,Vietnam,7217,top4,29.0,Vietnam
+114,IA,Bosnia and Herzegovina,6001,top5,5.0,Bosnia and Herzegovina
+115,IA,Korea,5602,top6,7.0,Korea
+116,IA,Guatemala,5015,top7,360.0,Guatemala
+117,IA,Burma,4843,top8,0.0,Burma
+118,IA,Philippines,4399,top9,1.0,Philippines
+119,IA,El Salvador,3569,top10,1.0,El Salvador
+120,ID,Mexico,52011,top1,309.0,"Mexico, Taco, Tex-Mex"
+121,ID,Canada,5266,top2,0.0,Canada
+122,ID,China,3485,top3,148.0,China
+123,ID,Philippines,2963,top4,1.0,Philippines
+124,ID,Germany,2760,top5,4.0,Germany
+125,ID,India,1956,top6,15.0,India
+126,ID,Peru,1516,top7,1.0,Peru
+127,ID,Ukraine,1467,top8,0.0,Ukraine
+128,ID,Vietnam,1432,top9,22.0,Vietnam
+129,ID,England,1219,top10,3.0,England
+130,IL,Mexico,652286,top1,2181.0,"Mexico, Taco, Tex-Mex"
+131,IL,India,160356,top2,235.0,India
+132,IL,Poland,129891,top3,62.0,Poland
+133,IL,Philippines,88951,top4,33.0,Philippines
+134,IL,China,76387,top5,1231.0,China
+135,IL,Korea,40673,top6,140.0,Korea
+136,IL,Pakistan,28722,top7,68.0,Pakistan
+137,IL,Guatemala,26126,top8,2336.0,Guatemala
+138,IL,Ukraine,25438,top9,3.0,Ukraine
+139,IL,Germany,21602,top10,39.0,Germany
+140,IN,Mexico,105727,top1,4675.0,"Mexico, Taco, Tex-Mex"
+141,IN,India,28740,top2,492.0,India
+142,IN,China,24106,top3,2552.0,China
+143,IN,Burma,12308,top4,0.0,Burma
+144,IN,Philippines,10643,top5,68.0,Philippines
+145,IN,El Salvador,8005,top6,12.0,El Salvador
+146,IN,Korea,7502,top7,290.0,Korea
+147,IN,Germany,7454,top8,78.0,Germany
+148,IN,Canada,6987,top9,0.0,Canada
+149,IN,Guatemala,6657,top10,4961.0,Guatemala
+150,KS,Mexico,85368,top1,441.0,"Mexico, Taco, Tex-Mex"
+151,KS,India,14203,top2,32.0,India
+152,KS,Vietnam,10995,top3,35.0,Vietnam
+153,KS,China,8302,top4,260.0,China
+154,KS,Guatemala,5937,top5,448.0,Guatemala
+155,KS,Philippines,5295,top6,0.0,Philippines
+156,KS,El Salvador,4091,top7,3.0,El Salvador
+157,KS,Korea,3993,top8,22.0,Korea
+158,KS,Germany,3624,top9,2.0,Germany
+159,KS,Kenya,3353,top10,4.0,Other Middle Africa
+160,KY,Mexico,32521,top1,397.0,"Mexico, Taco, Tex-Mex"
+161,KY,India,11347,top2,22.0,India
+162,KY,Cuba,9870,top3,15.0,Cuba
+163,KY,China,6572,top4,243.0,China
+164,KY,Guatemala,6375,top5,389.0,Guatemala
+165,KY,Philippines,5930,top6,1.0,Philippines
+166,KY,Germany,5879,top7,9.0,Germany
+167,KY,Vietnam,4157,top8,23.0,Vietnam
+168,KY,Korea,3946,top9,21.0,Korea
+169,KY,Bosnia and Herzegovina,3598,top10,3.0,Bosnia and Herzegovina
+170,LA,Mexico,32296,top1,357.0,"Mexico, Taco, Tex-Mex"
+171,LA,Honduras,29600,top2,13.0,South America
+172,LA,Vietnam,20309,top3,94.0,Vietnam
+173,LA,Guatemala,6968,top4,406.0,Guatemala
+174,LA,India,6688,top5,20.0,India
+175,LA,Philippines,6471,top6,1.0,Philippines
+176,LA,China,6390,top7,326.0,China
+177,LA,El Salvador,5861,top8,1.0,El Salvador
+178,LA,Cuba,4641,top9,11.0,Cuba
+179,LA,Nicaragua,4224,top10,0.0,Nicaragua
+180,MA,China,92586,top1,5180.0,China
+181,MA,Dominican Republic,86889,top2,41.0,Dominican Republic
+182,MA,India,69848,top3,746.0,India
+183,MA,Brazil,69386,top4,357.0,Brazil
+184,MA,Haiti,55871,top5,490.0,Haiti
+185,MA,Portugal,54221,top6,235.0,Portugal
+186,MA,El Salvador,39776,top7,51.0,El Salvador
+187,MA,Vietnam,37267,top8,543.0,Vietnam
+188,MA,Canada,30222,top9,0.0,Canada
+189,MA,Guatemala,29658,top10,3298.0,Guatemala
+190,MD,El Salvador,108128,top1,1.0,El Salvador
+191,MD,India,61911,top2,90.0,India
+192,MD,China,43664,top3,433.0,China
+193,MD,Mexico,37005,top4,231.0,"Mexico, Taco, Tex-Mex"
+194,MD,Philippines,36218,top5,2.0,Philippines
+195,MD,Nigeria,35590,top6,19.0,Nigeria
+196,MD,Korea,35106,top7,53.0,Korea
+197,MD,Guatemala,34922,top8,319.0,Guatemala
+198,MD,Jamaica,26583,top9,6.0,Jamaica
+199,MD,Ethiopia,24001,top10,5.0,Ethiopia
+200,ME,Canada,9622,top1,0.0,Canada
+201,ME,China,2723,top2,87.0,China
+202,ME,Other Eastern Africa,2252,top3,4.0,Other Eastern Africa
+203,ME,Germany,2041,top4,6.0,Germany
+204,ME,Philippines,2010,top5,2.0,Philippines
+205,ME,Other Middle Africa,1615,top6,4.0,Other Middle Africa
+206,ME,England,1318,top8,0.0,England
+207,ME,India,1318,top7,10.0,India
+208,ME,Somalia,1318,top9,4.0,Somalia
+209,ME,Vietnam,1271,top10,1.0,Vietnam
+210,MI,Mexico,83598,top1,658.0,"Mexico, Taco, Tex-Mex"
+211,MI,India,71810,top2,96.0,India
+212,MI,Iraq,56590,top3,325.0,Iraq
+213,MI,China,37714,top4,763.0,China
+214,MI,Canada,35976,top5,1.0,Canada
+215,MI,Lebanon,20398,top6,20.0,Lebanon
+216,MI,Philippines,19972,top7,4.0,Philippines
+217,MI,Korea,19815,top8,69.0,Korea
+218,MI,Germany,18629,top9,26.0,Germany
+219,MI,Yemen,16576,top10,325.0,Yemen
+220,MN,Mexico,64492,top1,63.0,"Mexico, Taco, Tex-Mex"
+221,MN,Somalia,33463,top2,2.0,Somalia
+222,MN,India,30163,top3,9.0,India
+223,MN,Laos,24413,top4,0.0,Laos
+224,MN,Ethiopia,21900,top5,0.0,Ethiopia
+225,MN,Vietnam,18649,top6,10.0,Vietnam
+226,MN,China,18562,top7,83.0,China
+227,MN,Thailand,18549,top8,9.0,Thailand
+228,MN,Korea,13462,top9,1.0,Korea
+229,MN,Kenya,13178,top10,2.0,Other Middle Africa
+230,MO,Mexico,43580,top1,587.0,"Mexico, Taco, Tex-Mex"
+231,MO,India,19703,top2,56.0,India
+232,MO,China,16861,top3,640.0,China
+233,MO,Vietnam,11667,top4,49.0,Vietnam
+234,MO,Philippines,9822,top5,3.0,Philippines
+235,MO,Bosnia and Herzegovina,9211,top6,16.0,Bosnia and Herzegovina
+236,MO,Germany,7825,top7,18.0,Germany
+237,MO,Korea,7635,top8,38.0,Korea
+238,MO,Guatemala,5560,top9,613.0,Guatemala
+239,MO,Canada,5381,top10,0.0,Canada
+240,MS,Mexico,23319,top1,108.0,"Mexico, Taco, Tex-Mex"
+241,MS,India,4436,top2,8.0,India
+242,MS,Vietnam,4199,top3,14.0,Vietnam
+243,MS,Philippines,3511,top4,1.0,Philippines
+244,MS,Guatemala,3016,top5,113.0,Guatemala
+245,MS,China,2831,top6,76.0,China
+246,MS,Honduras,2411,top7,1.0,South America
+247,MS,Germany,2034,top8,0.0,Germany
+248,MS,Canada,1656,top9,0.0,Canada
+249,MS,Korea,962,top10,4.0,Korea
+250,MT,Canada,3853,top1,0.0,Canada
+251,MT,Mexico,2564,top2,57.0,"Mexico, Taco, Tex-Mex"
+252,MT,Germany,1929,top3,1.0,Germany
+253,MT,Philippines,1362,top4,0.0,Philippines
+254,MT,China,1313,top5,29.0,China
+255,MT,Korea,827,top6,3.0,Korea
+256,MT,England,658,top7,0.0,England
+257,MT,"United Kingdom, excluding England and Scotland",602,top8,1.0,United Kingdom
+258,MT,Japan,535,top9,17.0,"Japan, Sushi, Teriyaki, Ramen"
+259,MT,Russia,364,top10,0.0,Russia
+260,NC,Mexico,235756,top1,565.0,"Mexico, Taco, Tex-Mex"
+261,NC,India,66430,top2,54.0,India
+262,NC,Honduras,32547,top3,17.0,South America
+263,NC,El Salvador,30618,top4,1.0,El Salvador
+264,NC,China,26451,top5,529.0,China
+265,NC,Vietnam,23814,top6,46.0,Vietnam
+266,NC,Canada,18952,top7,0.0,Canada
+267,NC,Guatemala,18946,top8,613.0,Guatemala
+268,NC,Philippines,17509,top9,1.0,Philippines
+269,NC,Germany,16100,top10,14.0,Germany
+270,ND,Canada,2629,top1,1.0,Canada
+271,ND,Mexico,2397,top2,51.0,"Mexico, Taco, Tex-Mex"
+272,ND,Philippines,2074,top3,0.0,Philippines
+273,ND,Liberia,1366,top4,3.0,Liberia
+274,ND,India,1363,top5,4.0,India
+275,ND,China,1240,top6,28.0,China
+276,ND,Other South Central Asia,1089,top7,3.0,Other South Central Asia
+277,ND,Somalia,1035,top8,3.0,Somalia
+278,ND,Nepal,995,top9,2.0,Nepal
+279,ND,Other Eastern Africa,930,top10,3.0,Other Eastern Africa
+280,NE,Mexico,47642,top1,309.0,"Mexico, Taco, Tex-Mex"
+281,NE,Guatemala,8901,top2,280.0,Guatemala
+282,NE,India,6496,top3,14.0,India
+283,NE,Vietnam,5875,top4,23.0,Vietnam
+284,NE,El Salvador,4725,top5,7.0,El Salvador
+285,NE,China,4196,top6,156.0,China
+286,NE,Burma,3950,top7,0.0,Burma
+287,NE,Cuba,3413,top8,1.0,Cuba
+288,NE,Philippines,2400,top9,0.0,Philippines
+289,NE,Korea,2394,top10,13.0,Korea
+290,NH,Canada,8637,top1,0.0,Canada
+291,NH,India,7905,top2,23.0,India
+292,NH,China,4950,top3,212.0,China
+293,NH,Dominican Republic,3734,top4,0.0,Dominican Republic
+294,NH,Philippines,2474,top5,0.0,Philippines
+295,NH,Germany,2259,top6,3.0,Germany
+296,NH,Nepal,2242,top7,0.0,Nepal
+297,NH,Mexico,2187,top8,75.0,"Mexico, Taco, Tex-Mex"
+298,NH,Vietnam,2076,top9,16.0,Vietnam
+299,NH,Korea,2052,top10,10.0,Korea
+300,NJ,India,248849,top1,12053.0,India
+301,NJ,Dominican Republic,167377,top2,3004.0,Dominican Republic
+302,NJ,Mexico,114932,top3,27517.0,"Mexico, Taco, Tex-Mex"
+303,NJ,Philippines,83800,top4,1137.0,Philippines
+304,NJ,Colombia,81211,top5,2571.0,Colombia
+305,NJ,Ecuador,77710,top6,995.0,Ecuador
+306,NJ,China,74395,top7,62439.0,China
+307,NJ,Korea,70500,top8,6337.0,Korea
+308,NJ,Peru,60409,top9,3147.0,Peru
+309,NJ,El Salvador,47782,top10,934.0,El Salvador
+310,NM,Mexico,139747,top1,414.0,"Mexico, Taco, Tex-Mex"
+311,NM,Philippines,4947,top2,0.0,Philippines
+312,NM,Germany,4331,top3,2.0,Germany
+313,NM,China,3224,top4,104.0,China
+314,NM,Vietnam,3215,top5,43.0,Vietnam
+315,NM,India,3093,top6,15.0,India
+316,NM,Canada,3059,top7,0.0,Canada
+317,NM,Guatemala,2209,top8,427.0,Guatemala
+318,NM,El Salvador,1980,top9,1.0,El Salvador
+319,NM,Cuba,1835,top10,2.0,Cuba
+320,NV,Mexico,226047,top1,638.0,"Mexico, Taco, Tex-Mex"
+321,NV,Philippines,84894,top2,39.0,Philippines
+322,NV,El Salvador,25438,top3,4.0,El Salvador
+323,NV,Cuba,18880,top4,8.0,Cuba
+324,NV,China,17184,top5,348.0,China
+325,NV,Guatemala,13493,top6,672.0,Guatemala
+326,NV,Korea,10936,top7,58.0,Korea
+327,NV,Canada,10472,top8,0.0,Canada
+328,NV,Vietnam,9590,top9,75.0,Vietnam
+329,NV,India,9486,top10,49.0,India
+330,NY,Dominican Republic,495797,top1,217.0,Dominican Republic
+331,NY,China,397220,top2,4877.0,China
+332,NY,Jamaica,230275,top3,228.0,Jamaica
+333,NY,Mexico,225373,top4,2177.0,"Mexico, Taco, Tex-Mex"
+334,NY,Ecuador,176275,top5,71.0,Ecuador
+335,NY,Guyana,163223,top6,665.0,South America
+336,NY,India,160769,top7,918.0,India
+337,NY,Haiti,128209,top8,1313.0,Haiti
+338,NY,El Salvador,109733,top9,67.0,El Salvador
+339,NY,Colombia,102754,top10,184.0,Colombia
+340,OH,India,60167,top1,140.0,India
+341,OH,Mexico,44526,top2,1106.0,"Mexico, Taco, Tex-Mex"
+342,OH,China,34939,top3,1024.0,China
+343,OH,Germany,15032,top4,45.0,Germany
+344,OH,Philippines,14808,top5,7.0,Philippines
+345,OH,Canada,14413,top6,0.0,Canada
+346,OH,Korea,12833,top7,65.0,Korea
+347,OH,Vietnam,11801,top8,68.0,Vietnam
+348,OH,Other South Central Asia,11002,top9,165.0,Other South Central Asia
+349,OH,Somalia,10497,top10,39.0,Somalia
+350,OK,Mexico,109717,top1,588.0,"Mexico, Taco, Tex-Mex"
+351,OK,Vietnam,14358,top2,50.0,Vietnam
+352,OK,India,9834,top3,28.0,India
+353,OK,Guatemala,7209,top4,549.0,Guatemala
+354,OK,China,7115,top5,270.0,China
+355,OK,Philippines,5329,top6,2.0,Philippines
+356,OK,Korea,4996,top7,24.0,Korea
+357,OK,Germany,4902,top8,11.0,Germany
+358,OK,Honduras,3843,top9,9.0,South America
+359,OK,Canada,3763,top10,0.0,Canada
+360,OR,Mexico,147435,top1,2968.0,"Mexico, Taco, Tex-Mex"
+361,OR,Vietnam,21647,top2,585.0,Vietnam
+362,OR,China,21341,top3,1570.0,China
+363,OR,India,17628,top4,253.0,India
+364,OR,Canada,14621,top5,5.0,Canada
+365,OR,Philippines,14216,top6,19.0,Philippines
+366,OR,Korea,11714,top7,272.0,Korea
+367,OR,Ukraine,9194,top8,0.0,Ukraine
+368,OR,Germany,8825,top9,126.0,Germany
+369,OR,Japan,6359,top10,1684.0,"Japan, Sushi, Teriyaki, Ramen"
+370,PA,India,87256,top1,167.0,India
+371,PA,China,62929,top2,1668.0,China
+372,PA,Dominican Republic,61516,top3,5.0,Dominican Republic
+373,PA,Mexico,57457,top4,604.0,"Mexico, Taco, Tex-Mex"
+374,PA,Vietnam,33139,top5,125.0,Vietnam
+375,PA,Korea,28661,top6,68.0,Korea
+376,PA,Jamaica,20644,top7,36.0,Jamaica
+377,PA,Philippines,20326,top8,9.0,Philippines
+378,PA,Germany,19169,top9,38.0,Germany
+379,PA,Ukraine,18841,top10,0.0,Ukraine
+380,RI,Dominican Republic,26233,top1,7.0,Dominican Republic
+381,RI,Portugal,15478,top2,87.0,Portugal
+382,RI,Guatemala,13136,top3,160.0,Guatemala
+383,RI,Cabo Verde,8235,top4,23.0,Cabo Verde
+384,RI,India,5857,top5,16.0,India
+385,RI,Colombia,5736,top6,2.0,Colombia
+386,RI,China,5313,top7,310.0,China
+387,RI,Mexico,3508,top8,120.0,"Mexico, Taco, Tex-Mex"
+388,RI,Cambodia,2902,top9,0.0,Cambodia
+389,RI,Haiti,2848,top10,14.0,Haiti
+390,SC,Mexico,67263,top1,604.0,"Mexico, Taco, Tex-Mex"
+391,SC,India,13113,top2,48.0,India
+392,SC,Philippines,10119,top3,6.0,Philippines
+393,SC,Germany,9422,top4,14.0,Germany
+394,SC,Colombia,9054,top5,3.0,Colombia
+395,SC,China,9000,top6,575.0,China
+396,SC,Canada,7745,top7,0.0,Canada
+397,SC,Guatemala,7713,top8,653.0,Guatemala
+398,SC,Honduras,7647,top9,27.0,South America
+399,SC,Vietnam,5526,top10,51.0,Vietnam
+400,SD,Mexico,3331,top1,53.0,"Mexico, Taco, Tex-Mex"
+401,SD,Ethiopia,2182,top2,2.0,Ethiopia
+402,SD,Philippines,1439,top3,0.0,Philippines
+403,SD,Burma,1372,top4,0.0,Burma
+404,SD,China,1288,top5,34.0,China
+405,SD,Guatemala,1266,top6,52.0,Guatemala
+406,SD,Canada,1092,top7,0.0,Canada
+407,SD,Nepal,1054,top8,0.0,Nepal
+408,SD,India,1008,top9,5.0,India
+409,SD,Thailand,930,top10,2.0,Thailand
+410,TN,Mexico,91172,top1,541.0,"Mexico, Taco, Tex-Mex"
+411,TN,India,21276,top2,22.0,India
+412,TN,Guatemala,12504,top3,534.0,Guatemala
+413,TN,China,11929,top4,334.0,China
+414,TN,Honduras,11431,top5,8.0,South America
+415,TN,Philippines,9750,top6,5.0,Philippines
+416,TN,Egypt,9558,top7,11.0,Egypt
+417,TN,El Salvador,8986,top8,3.0,El Salvador
+418,TN,Vietnam,8790,top9,29.0,Vietnam
+419,TN,Canada,8598,top10,0.0,Canada
+420,TX,Mexico,2535883,top1,43650.0,"Mexico, Taco, Tex-Mex"
+421,TX,India,253898,top2,3952.0,India
+422,TX,El Salvador,206561,top3,592.0,El Salvador
+423,TX,Vietnam,177574,top4,3956.0,Vietnam
+424,TX,Honduras,111466,top5,874.0,South America
+425,TX,China,103432,top6,12709.0,China
+426,TX,Philippines,99561,top7,163.0,Philippines
+427,TX,Guatemala,73876,top8,32767.0,Guatemala
+428,TX,Nigeria,73135,top9,551.0,Nigeria
+429,TX,Pakistan,58890,top10,798.0,Pakistan
+430,UT,Mexico,103386,top1,516.0,"Mexico, Taco, Tex-Mex"
+431,UT,Canada,8148,top2,1.0,Canada
+432,UT,India,7501,top3,49.0,India
+433,UT,El Salvador,7295,top4,3.0,El Salvador
+434,UT,China,7152,top5,244.0,China
+435,UT,"Oceania, n.e.c.",6826,top6,1.0,"Oceania, n.e.c."
+436,UT,Vietnam,6807,top7,60.0,Vietnam
+437,UT,Peru,6088,top8,6.0,Peru
+438,UT,Philippines,5434,top9,3.0,Philippines
+439,UT,Guatemala,5187,top10,554.0,Guatemala
+440,VA,El Salvador,107946,top1,0.0,El Salvador
+441,VA,India,87110,top2,54.0,India
+442,VA,Mexico,53864,top3,478.0,"Mexico, Taco, Tex-Mex"
+443,VA,Philippines,53623,top4,35.0,Philippines
+444,VA,Korea,53432,top5,59.0,Korea
+445,VA,Vietnam,42986,top6,55.0,Vietnam
+446,VA,China,39240,top7,728.0,China
+447,VA,Honduras,34352,top8,29.0,South America
+448,VA,Guatemala,30780,top9,585.0,Guatemala
+449,VA,Ethiopia,29850,top10,16.0,Ethiopia
+450,WA,Mexico,240394,top1,9330.0,"Mexico, Taco, Tex-Mex"
+451,WA,India,75552,top2,1621.0,India
+452,WA,Philippines,69465,top3,254.0,Philippines
+453,WA,China,65878,top4,6111.0,China
+454,WA,Vietnam,55863,top5,4388.0,Vietnam
+455,WA,Korea,46253,top6,1589.0,Korea
+456,WA,Canada,45302,top7,1.0,Canada
+457,WA,Ukraine,31620,top8,0.0,Ukraine
+458,WA,Russia,19322,top9,126.0,Russia
+459,WA,Germany,18884,top10,220.0,Germany
+460,WI,Mexico,88562,top1,525.0,"Mexico, Taco, Tex-Mex"
+461,WI,India,22672,top2,55.0,India
+462,WI,Laos,16269,top3,2.0,Laos
+463,WI,China,15702,top4,426.0,China
+464,WI,Thailand,10875,top5,85.0,Thailand
+465,WI,Germany,9610,top6,42.0,Germany
+466,WI,Philippines,7832,top7,1.0,Philippines
+467,WI,Canada,6873,top8,0.0,Canada
+468,WI,Korea,6367,top9,16.0,Korea
+469,WI,Poland,4150,top10,2.0,Poland
+470,WV,India,2743,top1,2.0,India
+471,WV,China,2515,top2,23.0,China
+472,WV,Philippines,2193,top3,0.0,Philippines
+473,WV,Mexico,1864,top4,23.0,"Mexico, Taco, Tex-Mex"
+474,WV,Germany,1319,top5,0.0,Germany
+475,WV,Canada,1162,top6,0.0,Canada
+476,WV,England,745,top7,0.0,England
+477,WV,Japan,734,top8,16.0,"Japan, Sushi, Teriyaki, Ramen"
+478,WV,Iran,724,top9,0.0,Iran
+479,WV,Vietnam,655,top10,2.0,Vietnam
+480,WY,Mexico,8441,top1,32.0,"Mexico, Taco, Tex-Mex"
+481,WY,Philippines,1046,top2,0.0,Philippines
+482,WY,Canada,1022,top3,0.0,Canada
+483,WY,Guatemala,756,top4,32.0,Guatemala
+484,WY,Germany,700,top5,0.0,Germany
+485,WY,China,672,top6,20.0,China
+486,WY,England,584,top7,0.0,England
+487,WY,El Salvador,503,top8,0.0,El Salvador
+488,WY,"United Kingdom, excluding England and Scotland",396,top9,0.0,United Kingdom
+489,WY,Korea,373,top10,1.0,Korea

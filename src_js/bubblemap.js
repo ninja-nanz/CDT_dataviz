@@ -18,7 +18,6 @@ let stateShow = [1,0,0,0,0,0,0,0,0,0,0,0,1,
                  0,0,0,1,0,0,0,1,0,0,0,0,0,
                  1,0,0,0,0,0,0,0,1,0,0,0,0];
 
-
 //let bubblemapObj; // map object
 let eachStateBubbleObj // 
 let bubblesArr = []; //array of all bubble
@@ -27,18 +26,23 @@ let hmax = 13; //cols
 let vmax = 9; //rows
 let counter = 0;
 
+// let stateCompleteInfo;
 
 //=========================================================================
 // SETUP CODE -> CALLED ON SKETCH.JS
 //=========================================================================
 
+function preload() {
+  stateCompleteInfo = loadJSON('./results/final_json.json');
+}
 
 function setup() {
   createCanvas(800, 600);
-  bubblemapObj = new bubbleMap(); 
-  bubblemapObj.drawGrid();
-
-
+  //bubblemapObj = new bubbleMap(); 
+  //bubblemapObj.drawGrid();
+  console.log("Aqui esta");
+  console.log(stateCompleteInfo);
+  console.log(stateCompleteInfo["AK"]["top1"]["counts"]);
 }
 
 
@@ -65,9 +69,10 @@ class bubbleMap {
             let c = x + hmax*y;
             if(stateShow[c]==1){
               if(y%2==0) {
+                let stateName = stateNames[counter];
                 eachStateBubbleObj = new  stateBubble(this.x=x, this.y=y, 
-                                                      this.stateName=stateNames[counter],
-                                                      this.stateInfo='Hola');
+                                                      this.stateName=stateName,
+                                                      this.stateInfo='hola');
                 eachStateBubbleObj.display();
                 
                 
@@ -97,6 +102,7 @@ class stateBubble {
         this.y = y;
         this.col = "#259F40";
         this.stateName = stateName;
+        // console.log('stateInfo', stateInfo);
         this.stateInfo = stateInfo;
 
         // Declare positions of state draw

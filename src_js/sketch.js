@@ -135,7 +135,7 @@ function plotPopulationBars(info) {
 
     // restaurant bars
     fill(bubbleColorMain);
-    rect(birthplacesPosx+30, birthplacesPosy-=20, restaurant_perc*1000, 35);
+    rect(birthplacesPosx+30, birthplacesPosy-=20, restaurant_perc*1000, 30);
   }
 }
 

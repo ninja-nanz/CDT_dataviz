@@ -3,8 +3,8 @@
 *.DS_Store
 *.vscode
 *.ipynb_checkpoints
-data/
-results/
+#data/
+./results/city_restaurant_counts.csv
 
 # Byte-compiled / optimized / DLL files
 _pycache_/
