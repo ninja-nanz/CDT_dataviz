@@ -9,7 +9,6 @@ let bubbleSize = 50;
 let bubbleColorMain = "#259F40";
 let bubbleColorClick = "#FF8A00";
 
-
 //=========================================================================
 // SETUP CODE
 //=========================================================================
@@ -48,16 +47,21 @@ function checkStatesInfo() {
   console.log(statesInfo);
   for (let i = 0; i < statesList.length; i++) {
     console.log(statesList[i].stateName)
+    //console.log(statesList[i].row)
+    //console.log(statesList[i].col)
+    console.log(statesList[i].xEllipse)
+    console.log(statesList[i].yEllipse)
   }
 }
 
-function createStatesList(){
+function createStatesList(){  
   let stateKeys = Object.keys(statesInfo);
   for (let i = 0; i < stateKeys.length; i++) {
     let stateKey = stateKeys[i]
     
     // Declare new state object with its info
-    var state = new stateBubble2(x=1, y=1,
+    var state = new stateBubble2(row=statesInfo[stateKey].row, 
+                                 col=statesInfo[stateKey].col,
                                  stateName=stateKey,
                                  stateInfo=statesInfo[stateKey]);
     statesList.push(state);
@@ -68,10 +72,40 @@ function createStatesList(){
 // STATE CLASS
 //=========================================================================
 
+// US MAP matrix
+// let stateShow = [1,0,0,0,0,0,0,0,0,0,0,0,1,
+//                  0,0,0,0,0,0,0,0,0,0,1,1,0,
+//                  0,1,1,1,1,1,0,1,0,1,1,1,0,
+//                  0,1,1,1,1,1,1,1,1,1,1,0,0,
+//                  0,1,1,1,1,1,1,1,1,1,0,0,0,
+//                  0,1,1,1,1,1,1,1,1,0,0,0,1,
+//                  0,0,0,1,1,1,1,1,1,0,0,0,0,
+//                  0,0,0,1,0,0,0,1,0,0,0,0,0,
+//                  1,0,0,0,0,0,0,0,1,0,0,0,0];
+
+// MAP defines row and col positions parsed with python
+// stateShow = np.array([["AK","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","ME"],
+//                       ["NA","NA","NA","NA","NA","NA","NA","NA","NA","NA","VT","NH","NA"],
+//                       ["NA","WA", "MT", "ND", "MN", "WI","NA","MI","NA","NY", "MA", "RI","NA"],
+//                       ["NA","ID", "WY", "SD", "IA", "IL", "IN", "OH","PA", "NJ", "CT","NA","NA"],
+//                       ["NA","OR", "NV", "CO", "NE", "MO", "KY", "WV","MD", "DE","NA","NA","NA"],
+//                       ["NA","CA", "AZ", "UT", "KS", "AR", "TN", "VA", "NC","NA","NA","NA","DC"],
+//                       ["NA","NA","NA","NM", "OK", "LA", "MS", "AL", "SC","NA","NA","NA","NA"],
+//                       ["NA","NA","NA","TX","NA","NA","NA","GA","NA","NA","NA","NA","NA"],
+//                       ["HI","NA","NA","NA","NA","NA","NA","NA","FL","NA","NA","NA","NA"]])
+
+
 class stateBubble2 {
-  constructor(x, y, stateName, stateInfo) {
-      this.x = x;
-      this.y = y;
+  constructor(row, col, stateName, stateInfo) {
+      this.col = col;
+      this.row = row;
+
+      // Define x and y with window parameters
+      let xTranslation = (width-13)*0.001; // For columns of US MAP
+      let yTranslation = (height-9)*0.004; // For rows of US MAP      
+      this.x = col + xTranslation;
+      this.y = (row*1.2) + yTranslation;
+
       this.stateName = stateName;
       this.stateInfo = stateInfo;
 
@@ -83,7 +117,7 @@ class stateBubble2 {
   }
  
   display() {
-      fill(this.bubbleColorMain)
+      fill(bubbleColorMain)
       stroke("white");
       ellipse(this.xEllipse, this.yEllipse, bubbleSize, bubbleSize);
       // noStroke();
@@ -95,10 +129,10 @@ class stateBubble2 {
 // DRAW PAGE
 //=========================================================================
 
-// function draw() {
-//   //DISPLAY STATES
-//   for (let i = 0; i < statesList.length; i++) {
-//     // states[i].display(mouseX, mouseY);
-//     statesList[i].display();
-//   }
-// }
+function draw() {
+  //DISPLAY STATES
+  for (let i = 0; i < statesList.length; i++) {
+    // states[i].display(mouseX, mouseY);
+    statesList[i].display();
+  }
+}
