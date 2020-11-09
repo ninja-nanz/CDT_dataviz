@@ -30,6 +30,7 @@ function setup() {
   // Create a list of state buttons
   createStateButtons();
 
+  // Console Logs for debugging purposes
   checkStatesInfo();
 }
 
@@ -167,6 +168,8 @@ function plotPopulationBars(info) {
 //                       ["NA","NA","NA","TX","NA","NA","NA","GA","NA","NA","NA","NA","NA"],
 //                       ["HI","NA","NA","NA","NA","NA","NA","NA","FL","NA","NA","NA","NA"]])
 
+// Position comes in JSON file no need for anything fancy in JS
+// Position is defined by position in matrix of names
 
 class stateBubble2 {
   constructor(row, col, stateName, stateInfo) {
@@ -189,27 +192,6 @@ class stateBubble2 {
       this.xText = this.x*bubbleSize*1.07-textWidth(this.stateName)*0.5;
       this.yText = this.y*bubbleSize*0.9+10;
 
-      // Declare Button
-      // this.button = createButton(this.stateName);
-      // this.button.position(this.xEllipse, this.yEllipse);
-      // this.button.style('background-color', color(bubbleColorMain));
-      // this.button.mousePressed(this.displayStateInfo);
-  }
- 
-  // display() {
-  //     fill(this.bubbleColor)
-  //     stroke("white");
-  //     ellipse(this.xEllipse+32, this.yEllipse+23, bubbleSize, bubbleSize);
-  //     noStroke();
-  //     // text(this.stateName, this.xText, this.yText);
-  // }
-
-  displayStateInfo(){
-    //this.bubbleColor = bubbleColorClick;
-    //text("AQUI AQUI AQUI", 60, 100);
-    console.log("this.stateName", this.stateName)
-    text(this.stateName, 60, 110);
-    // button.style('background-color', 'red')
   }
 }
 
@@ -217,9 +199,3 @@ class stateBubble2 {
 // DRAW PAGE
 //=========================================================================
 
-// function draw() {
-//   //DISPLAY STATES
-//   for (let i = 0; i < statesList.length; i++) {
-//     statesList[i].display();
-//   }
-// }
