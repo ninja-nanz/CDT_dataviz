@@ -129,14 +129,14 @@ function plotPopulationBars(info) {
     text(country, birthplacesPosx-10, birthplacesPosy+=60); 
 
     // population bars
-    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*1000, 35);
+    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*500, 35);
     noFill();
     noStroke();
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
 
     // restaurant bars
     fill(bubbleColorMain);
-    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*1000, 30);
+    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*100, 30);
   }
 }
 
