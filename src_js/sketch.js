@@ -78,19 +78,31 @@ function createStateButtons(){
       for (let i = 0; i < stateKeys.length; i++) {
         stateKey = stateKeys[i];
         stateBub = statesList[i];
+        stateInfo = statesInfo[stateKey];
 
         createButton(stateKey)
           .position(stateBub.xEllipse, stateBub.yEllipse)
           .style('background-color', color(bubbleColorMain))
-          .mousePressed(createMousePressedFunction(stateKey));
+          .mousePressed(createMousePressedFunction(stateInfo));
       }
 }
 
-function createMousePressedFunction(stateKey) {
-  return function() {fun(stateKey);}
+function createMousePressedFunction(stateInfo) {
+  return function() {fun(stateInfo);}
 
-  function fun(value) {
-    console.log(value)
+  function fun(info) {
+
+    background('#FFF8EE');
+    noStroke();
+    fill(75);
+    textSize(30);
+    text(info.state_name, windowWidth /2 + 500, 200);
+    textSize(20);
+    text("Total immigrant population: " + info.total, windowWidth /2 - 500, 20);
+    
+    // birthplacesObj = this.birthplaces;
+    // birthplacesPosx = windowWidth - 600;
+    // birthplacesPosy = 0;     
   }
 }
 
