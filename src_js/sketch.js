@@ -47,7 +47,7 @@ function createDataVizBackground(){
 
 function checkStatesInfo() {
   console.log(typeof statesInfo);
-  console.log(statesInfo.AK.top1.counts);
+  console.log(statesInfo.AK);
   console.log(statesInfo);
   for (let i = 0; i < statesList.length; i++) {
     console.log(statesList[i].stateName)
@@ -115,6 +115,8 @@ function plotPopulationBars(info) {
 
   birthplacesPosx = windowWidth - 400;
   birthplacesPosy = 300;
+
+ 
   for (let i = 0; i < topList.length; i++) {
     let population_perc = info[topList[i]].population / info.total_population
     let restaurant_perc = info[topList[i]].counts / info.total_restaurants
