@@ -111,11 +111,12 @@ function plotPopulationBars(info) {
   let topList = ["top1", "top2", "top3", "top4", "top5", 
                  "top6", "top7", "top8", "top9", "top10"]
 
+  birthplacesPosx = windowWidth - 600;
+  birthplacesPosy = 300; 
+  textAlign(RIGHT);
   text("Total immigrant population: " + info.total_population, 
-                                      windowWidth - 500, 250);
+                                        birthplacesPosx+200, 250);
 
-  birthplacesPosx = windowWidth - 400;
-  birthplacesPosy = 300;
   for (let i = 0; i < topList.length; i++) {
     let population_perc = info[topList[i]].population / info.total_population
     let restaurant_perc = info[topList[i]].counts / info.total_restaurants
@@ -125,7 +126,6 @@ function plotPopulationBars(info) {
     stroke('white');
     // country names
     textSize(16);
-    textAlign(RIGHT);
     text(country, birthplacesPosx-10, birthplacesPosy+=60); 
 
     // population bars
@@ -136,7 +136,7 @@ function plotPopulationBars(info) {
 
     // restaurant bars
     fill(bubbleColorMain);
-    rect(birthplacesPosx+30, birthplacesPosy-=20, restaurant_perc*1000, 30);
+    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*1000, 30);
   }
 }
 
