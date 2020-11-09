@@ -8,6 +8,7 @@ let statesList = [];
 let bubbleSize = 50;
 let bubbleColorMain = "#259F40";
 let bubbleColorClick = "#FF8A00";
+let mouseXinBox, mouseYinBox;
 
 //=========================================================================
 // SETUP CODE
@@ -25,6 +26,9 @@ function setup() {
   
   // Create a list of states from JSON data
   createStatesList();
+
+  // Create a list of state buttons
+  createStateButtons();
 
   checkStatesInfo();
 }
@@ -68,6 +72,28 @@ function createStatesList(){
   }
 }
 
+function createStateButtons(){
+      // Declare Button
+      var stateKeys = Object.keys(statesInfo);
+      for (let i = 0; i < stateKeys.length; i++) {
+        stateKey = stateKeys[i];
+        stateBub = statesList[i];
+
+        createButton(stateKey)
+          .position(stateBub.xEllipse, stateBub.yEllipse)
+          .style('background-color', color(bubbleColorMain))
+          .mousePressed(createMousePressedFunction(stateKey));
+      }
+}
+
+function createMousePressedFunction(stateKey) {
+  return function() {fun(stateKey);}
+
+  function fun(value) {
+    console.log(value)
+  }
+}
+
 //=========================================================================
 // STATE CLASS
 //=========================================================================
@@ -99,11 +125,12 @@ class stateBubble2 {
   constructor(row, col, stateName, stateInfo) {
       this.col = col;
       this.row = row;
+      this.bubbleColor = bubbleColorMain;
 
       // Define x and y with window parameters
       let xTranslation = (width-13)*0.001; // For columns of US MAP
       let yTranslation = (height-9)*0.004; // For rows of US MAP      
-      this.x = col + xTranslation;
+      this.x = (col*1.2) + xTranslation;
       this.y = (row*1.2) + yTranslation;
 
       this.stateName = stateName;
@@ -114,14 +141,28 @@ class stateBubble2 {
       this.yEllipse = this.y*bubbleSize*0.9
       this.xText = this.x*bubbleSize*1.07-textWidth(this.stateName)*0.5;
       this.yText = this.y*bubbleSize*0.9+10;
+
+      // Declare Button
+      // this.button = createButton(this.stateName);
+      // this.button.position(this.xEllipse, this.yEllipse);
+      // this.button.style('background-color', color(bubbleColorMain));
+      // this.button.mousePressed(this.displayStateInfo);
   }
  
-  display() {
-      fill(bubbleColorMain)
-      stroke("white");
-      ellipse(this.xEllipse, this.yEllipse, bubbleSize, bubbleSize);
-      // noStroke();
-      text(this.stateName, this.xText, this.yText);
+  // display() {
+  //     fill(this.bubbleColor)
+  //     stroke("white");
+  //     ellipse(this.xEllipse+32, this.yEllipse+23, bubbleSize, bubbleSize);
+  //     noStroke();
+  //     // text(this.stateName, this.xText, this.yText);
+  // }
+
+  displayStateInfo(){
+    //this.bubbleColor = bubbleColorClick;
+    //text("AQUI AQUI AQUI", 60, 100);
+    console.log("this.stateName", this.stateName)
+    text(this.stateName, 60, 110);
+    // button.style('background-color', 'red')
   }
 }
 
@@ -129,10 +170,9 @@ class stateBubble2 {
 // DRAW PAGE
 //=========================================================================
 
-function draw() {
-  //DISPLAY STATES
-  for (let i = 0; i < statesList.length; i++) {
-    // states[i].display(mouseX, mouseY);
-    statesList[i].display();
-  }
-}
+// function draw() {
+//   //DISPLAY STATES
+//   for (let i = 0; i < statesList.length; i++) {
+//     statesList[i].display();
+//   }
+// }
