@@ -25,7 +25,8 @@ let bg;
 function preload() {
   birthplaceTable = loadTable('./data/transposed_birthplace.csv', 'csv', 'header'); // the CSV data
   flagJSON = loadJSON('./data/birthplaces.json');
-  bg = loadImage("./data/plainplate.png");
+  stateCompleteInfo = loadJSON('./results/final_json.txt');
+  //bg = loadImage("./data/plainplate.png");
 }
 
 

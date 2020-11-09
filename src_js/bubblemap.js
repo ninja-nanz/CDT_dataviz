@@ -2,7 +2,11 @@
 // DECLARE VARIABLES
 //=========================================================================
 
-let stateNames = ["AK", "ME", "VT", "NH", "WA", "MT", "ND", "MN", "WI", "MI", "NY", "MA", "RI", "ID", "WY", "SD", "IA", "IL", "IN", "OH", "PA", "NJ", "CT", "OR", "NV", "CO", "NE", "MO", "KY", "WV", "MD", "DE", "CA", "AZ", "UT", "KS", "AR", "TN", "VA", "NC", "DC", "NM", "OK", "LA", "MS", "AL", "SC", "TX", "GA", "HI", "FL"];
+let stateNames = ["AK", "ME", "VT", "NH", "WA", "MT", "ND", "MN", "WI", "MI",
+                  "NY", "MA", "RI", "ID", "WY", "SD", "IA", "IL", "IN", "OH",
+                  "PA", "NJ", "CT", "OR", "NV", "CO", "NE", "MO", "KY", "WV",
+                  "MD", "DE", "CA", "AZ", "UT", "KS", "AR", "TN", "VA", "NC",
+                  "DC", "NM", "OK", "LA", "MS", "AL", "SC", "TX", "GA", "HI", "FL"];
 
 let stateShow = [1,0,0,0,0,0,0,0,0,0,0,0,1,
                  0,0,0,0,0,0,0,0,0,0,1,1,0,
@@ -18,7 +22,7 @@ let stateShow = [1,0,0,0,0,0,0,0,0,0,0,0,1,
 //let bubblemapObj; // map object
 let eachStateBubbleObj // 
 let bubblesArr = []; //array of all bubble
-let s = 50; //size 
+let globalSize = 50; //size 
 let hmax = 13; //cols
 let vmax = 9; //rows
 let counter = 0;
@@ -53,7 +57,7 @@ class bubbleMap {
     
 
     drawGrid() {
-        translate((width-hmax*s)*.17, (height-vmax*s)*0.3);
+        translate((width-hmax*globalSize)*.17, (height-vmax*globalSize)*0.3);
         
         
         for(let y=0; y<vmax; y++) {
@@ -61,14 +65,16 @@ class bubbleMap {
             let c = x + hmax*y;
             if(stateShow[c]==1){
               if(y%2==0) {
-                eachStateBubbleObj = new  stateBubble(x,y, stateNames[counter]);
+                eachStateBubbleObj = new  stateBubble(this.x=x, this.y=y, 
+                                                      this.stateName=stateNames[counter],
+                                                      this.stateInfo='Hola');
                 eachStateBubbleObj.display();
                 
                 
                 
               } else {
                
-                eachStateBubbleObj = new  stateBubble(x,y,this.col);
+                eachStateBubbleObj = new  stateBubble(this.x=x, this.y=y, this.col);
                 eachStateBubbleObj.display()
                 
               }
@@ -86,21 +92,27 @@ class bubbleMap {
 
 
 class stateBubble {
-    constructor(x, y, stateName) {
+    constructor(x, y, stateName, stateInfo) {
         this.x = x;
         this.y = y;
         this.col = "#259F40";
         this.stateName = stateName;
-    }   
+        this.stateInfo = stateInfo;
+
+        // Declare positions of state draw
+        this.xEllipse = this.x*globalSize*1.07
+        this.yEllipse = this.y*globalSize*0.9
+        this.xText = this.x*globalSize*1.07-textWidth(this.stateName)*0.5;
+        this.yText = this.y*globalSize*0.9+10;
+    }
    
 
     display() {
         fill(this.col)
         stroke("white");
-        ellipse(this.x*s*1.07, this.y*s*0.9, s, s);   
-        fill(75);
-        noStroke();
-        text(stateNames[counter], this.x*s*1.07-textWidth(stateNames[counter])*0.5, this.y*s*0.9+10);
+        ellipse(this.xEllipse, this.yEllipse, globalSize, globalSize);
+        // noStroke();
+        text(this.stateName, this.xText, this.yText);
 
     }      
 
