@@ -74,9 +74,6 @@ let flagsImagesJSON = {'Bosnia and Herzegovina': {'path': '../data/birthplace_fl
 
 function preload() {
   statesJSON = loadJSON("./results/statesInfo.json");
-  //flagsJSON = loadJSON("./results/birthplaceFlags.json");
-
-  // Preload all flags
   preloadFlags();
 }
 
