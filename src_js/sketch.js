@@ -117,16 +117,6 @@ function plotPopulationBars(info) {
   text("Total immigrant population: " + info.total_population, 
                                         birthplacesPosx+200, 250);
 
-<<<<<<< HEAD
-  birthplacesPosx = windowWidth - 400;
-  birthplacesPosy = 300;
-
- 
-||||||| merged common ancestors
-  birthplacesPosx = windowWidth - 400;
-  birthplacesPosy = 300;
-=======
->>>>>>> 7ec761703e18e3f6eb4226aae040db495ffdac6c
   for (let i = 0; i < topList.length; i++) {
     let population_perc = info[topList[i]].population / info.total_population
     let restaurant_perc = info[topList[i]].counts / info.total_restaurants
