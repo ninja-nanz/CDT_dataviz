@@ -121,6 +121,8 @@ function plotPopulationBars(info) {
     let population_perc = info[topList[i]].population / info.total_population
     let restaurant_perc = info[topList[i]].counts / info.total_restaurants
     let country = info[topList[i]].country
+    let population_count = info[topList[i]].population
+    let cuisine_count = info[topList[i]].counts
 
     fill(bubbleColorClick);
     stroke('white');
@@ -129,14 +131,18 @@ function plotPopulationBars(info) {
     text(country, birthplacesPosx-10, birthplacesPosy+=60); 
 
     // population bars
-    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*1000, 35);
-    noFill();
+    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*500, 35);
+    //noFill();
     noStroke();
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
+    textSize(10);
+    text("population: "+population_count, birthplacesPosx+230, birthplacesPosy); 
 
     // restaurant bars
     fill(bubbleColorMain);
-    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*1000, 30);
+    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*200, 30);
+    textSize(10);
+    text("restaurants: "+cuisine_count, birthplacesPosx+230, birthplacesPosy); 
   }
 }
 
