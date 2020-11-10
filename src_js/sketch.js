@@ -2,7 +2,8 @@
 // DECLARE VARIABLES
 //=========================================================================
 
-let statesInfo;
+let statesJSON;
+let flagsJSON;
 let statesList = [];
 
 let bubbleSize = 50;
@@ -11,12 +12,22 @@ let bubbleColorClick = "#FF8A00";
 let mouseXinBox, mouseYinBox;
 
 //=========================================================================
-// SETUP CODE
+// PRELOAD CODE
 //=========================================================================
 
 function preload() {
-  statesInfo = loadJSON("./results/statesInfo.json");
+  statesJSON = loadJSON("./results/statesInfo.json");
+  flagsJSON = loadJSON("./results/birthplaceFlags.json");
 }
+
+function createStateButtons(){
+  flagsJSON['Afghanistan'] = loadImage('/Afghanistan.png');
+}
+
+//=========================================================================
+// SETUP CODE
+//=========================================================================
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // From global window sizes
@@ -31,7 +42,8 @@ function setup() {
   createStateButtons();
 
   // Console Logs for debugging purposes
-  checkStatesInfo();
+  checkStatesJSON();
+  checkFlagsJSON();
 }
 
 function createDataVizBackground(){
@@ -46,40 +58,46 @@ function createDataVizBackground(){
   subtitle.position(50, windowHeight-120);
 }
 
-function checkStatesInfo() {
-  console.log(typeof statesInfo);
-  console.log(statesInfo.AK.top1.counts);
-  console.log(statesInfo);
-  for (let i = 0; i < statesList.length; i++) {
-    console.log(statesList[i].stateName)
-    //console.log(statesList[i].row)
-    //console.log(statesList[i].col)
-    console.log(statesList[i].xEllipse)
-    console.log(statesList[i].yEllipse)
-  }
+function checkStatesJSON() {
+  console.log(typeof statesJSON);
+  console.log(statesJSON.AK.top1.counts);
+  console.log(statesJSON);
+  // for (let i = 0; i < statesList.length; i++) {
+  //   console.log(statesList[i].stateName)
+  //   //console.log(statesList[i].row)
+  //   //console.log(statesList[i].col)
+  //   console.log(statesList[i].xEllipse)
+  //   console.log(statesList[i].yEllipse)
+  // }
+}
+
+function checkFlagsJSON() {
+  console.log(typeof flagsJSON);
+  console.log(flagsJSON['Mexico']['path']);
+  console.log(flagsJSON);
 }
 
 function createStatesList(){  
-  let stateKeys = Object.keys(statesInfo);
+  let stateKeys = Object.keys(statesJSON);
   for (let i = 0; i < stateKeys.length; i++) {
     let stateKey = stateKeys[i]
     
     // Declare new state object with its info
-    var state = new stateBubble2(row=statesInfo[stateKey].row, 
-                                 col=statesInfo[stateKey].col,
+    var state = new stateBubble2(row=statesJSON[stateKey].row, 
+                                 col=statesJSON[stateKey].col,
                                  stateName=stateKey,
-                                 stateInfo=statesInfo[stateKey]);
+                                 stateInfo=statesJSON[stateKey]);
     statesList.push(state);
   }
 }
 
 function createStateButtons(){
       // Declare Button
-      var stateKeys = Object.keys(statesInfo);
+      var stateKeys = Object.keys(statesJSON);
       for (let i = 0; i < stateKeys.length; i++) {
         stateKey = stateKeys[i];
         stateBub = statesList[i];
-        stateInfo = statesInfo[stateKey];
+        stateInfo = statesJSON[stateKey];
 
         createButton(stateKey)
           .position(stateBub.xEllipse, stateBub.yEllipse)
