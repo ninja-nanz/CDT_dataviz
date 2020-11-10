@@ -9,6 +9,7 @@ let bubbleSize = 50;
 let bubbleColorMain = "#259F40";
 let bubbleColorClick = "#FF8A00";
 let mouseXinBox, mouseYinBox;
+var state;
 
 //=========================================================================
 // SETUP CODE
@@ -65,7 +66,7 @@ function createStatesList(){
     let stateKey = stateKeys[i]
     
     // Declare new state object with its info
-    var state = new stateBubble2(row=statesInfo[stateKey].row, 
+    state = new stateBubble2(row=statesInfo[stateKey].row, 
                                  col=statesInfo[stateKey].col,
                                  stateName=stateKey,
                                  stateInfo=statesInfo[stateKey]);
@@ -83,14 +84,17 @@ function createStateButtons(){
 
         createButton(stateKey)
           .position(stateBub.xEllipse, stateBub.yEllipse)
-          .style('background-color', color(bubbleColorMain))
-          .mousePressed(createMousePressedFunction(stateInfo));
+          //.style('background-color', color(bubbleColorMain))
+          .mousePressed(createMousePressedFunction(stateInfo))
+          
+          
       }
 }
 
+
 function createMousePressedFunction(stateInfo) {
   return function() {fun(stateInfo);}
-
+  
   function fun(info) {
 
     // Plot the title of extra info
@@ -175,6 +179,8 @@ function plotPopulationBars(info) {
 // Position comes in JSON file no need for anything fancy in JS
 // Position is defined by position in matrix of names
 
+
+
 class stateBubble2 {
   constructor(row, col, stateName, stateInfo) {
       this.col = col;
@@ -197,6 +203,8 @@ class stateBubble2 {
       this.yText = this.y*bubbleSize*0.9+10;
 
   }
+
+
 }
 
 //=========================================================================
