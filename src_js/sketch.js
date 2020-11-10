@@ -2,7 +2,8 @@
 // DECLARE VARIABLES
 //=========================================================================
 
-let statesInfo;
+let statesJSON;
+let flagsJSON;
 let statesList = [];
 
 let bubbleSize = 50;
@@ -11,13 +12,84 @@ let bubbleColorClick = "#FF8A00";
 let mouseXinBox, mouseYinBox;
 var state;
 
+// Because P5 Preload is uuuuuuugly
+let flagsImagesJSON = {'Bosnia and Herzegovina': {'path': '../data/birthplace_flags/Bosnia_Herzegovina.png'},
+                       'Brazil': {'path': '../data/birthplace_flags/Brazil.png'},
+                       'Burma': {'path': '../data/birthplace_flags/Myanmar.png'},
+                       'Cabo Verde': {'path': '../data/birthplace_flags/CapeVerde.png'},
+                       'Cambodia': {'path': '../data/birthplace_flags/Cambodia.png'},
+                       'Canada': {'path': '../data/birthplace_flags/Canada.png'},
+                       'China': {'path': '../data/birthplace_flags/China.png'},
+                       'Colombia': {'path': '../data/birthplace_flags/Colombia.png'},
+                       'Cuba': {'path': '../data/birthplace_flags/Cuba.png'},
+                       'Dominican Republic': {'path': '../data/birthplace_flags/DominicanRepublic.png'},
+                       'Ecuador': {'path': '../data/birthplace_flags/Ecuador.png'},
+                       'Egypt': {'path': '../data/birthplace_flags/Egypt.png'},
+                       'El Salvador': {'path': '../data/birthplace_flags/ElSalvador.png'},
+                       'England': {'path': '../data/birthplace_flags/UnitedKingdom.png'},
+                       'Ethiopia': {'path': '../data/birthplace_flags/Ethiopia.png'},
+                       'France': {'path': '../data/birthplace_flags/France.png'},
+                       'Germany': {'path': '../data/birthplace_flags/Germany.png'},
+                       'Guatemala': {'path': '../data/birthplace_flags/Guatemala.png'},
+                       'Guyana': {'path': '../data/birthplace_flags/Guyana.png'},
+                       'Haiti': {'path': '../data/birthplace_flags/Haiti.png'},
+                       'Honduras': {'path': '../data/birthplace_flags/Honduras.png'},
+                       'India': {'path': '../data/birthplace_flags/India.png'},
+                       'Iran': {'path': '../data/birthplace_flags/Iran.png'},
+                       'Iraq': {'path': '../data/birthplace_flags/Iraq.png'},
+                       'Italy': {'path': '../data/birthplace_flags/Italy.png'},
+                       'Jamaica': {'path': '../data/birthplace_flags/Jamaica.png'},
+                       'Japan': {'path': '../data/birthplace_flags/Japan.png'},
+                       'Kenya': {'path': '../data/birthplace_flags/Kenya.png'},
+                       'Korea': {'path': '../data/birthplace_flags/SouthKorea.png'},
+                       'Laos': {'path': '../data/birthplace_flags/Laos.png'},
+                       'Lebanon': {'path': '../data/birthplace_flags/Lebanon.png'},
+                       'Liberia': {'path': '../data/birthplace_flags/Liberia.png'},
+                       'Mexico': {'path': '../data/birthplace_flags/Mexico.png'},
+                       'Nepal': {'path': '../data/birthplace_flags/Nepal.png'},
+                       'Nicaragua': {'path': '../data/birthplace_flags/Nicaragua.png'},
+                       'Nigeria': {'path': '../data/birthplace_flags/Nigeria.png'},
+                       'Oceania, n.e.c.': {'path': '../data/birthplace_flags/NewZealand.png'},
+                       'Oceania, nec': {'path': '../data/birthplace_flags/NewZealand.png'},
+                       'Other Eastern Africa': {'path': '../data/birthplace_flags/Somalia.png'},
+                       'Other Middle Africa': {'path': '../data/birthplace_flags/DemocraticRepublicOfTheCongo.png'},
+                       'Other South Central Asia': {'path': '../data/birthplace_flags/Mongolia.png'},
+                       'Pakistan': {'path': '../data/birthplace_flags/Pakistan.png'},
+                       'Peru': {'path': '../data/birthplace_flags/Peru.png'},
+                       'Philippines': {'path': '../data/birthplace_flags/Philippines.png'},
+                       'Poland': {'path': '../data/birthplace_flags/Poland.png'},
+                       'Portugal': {'path': '../data/birthplace_flags/Portugal.png'},
+                       'Russia': {'path': '../data/birthplace_flags/Russia.png'},
+                       'Somalia': {'path': '../data/birthplace_flags/Somalia.png'},
+                       'Taiwan': {'path': '../data/birthplace_flags/Taiwan.png'},
+                       'Thailand': {'path': '../data/birthplace_flags/Thailand.png'},
+                       'Ukraine': {'path': '../data/birthplace_flags/Ukraine.png'},
+                       'United Kingdom': {'path': '../data/birthplace_flags/UnitedKingdom.png'},
+                       'Venezuela': {'path': '../data/birthplace_flags/Venezuela.png'},
+                       'Vietnam': {'path': '../data/birthplace_flags/Vietnam.png'},
+                       'Yemen': {'path': '../data/birthplace_flags/Yemen.png'}}
+
+//=========================================================================
+// PRELOAD CODE
+//=========================================================================
+
+function preload() {
+  statesJSON = loadJSON("./results/statesInfo.json");
+  preloadFlags();
+}
+
+function preloadFlags(){
+  var flagKeys = Object.keys(flagsImagesJSON);
+  for (let i = 0; i < flagKeys.length; i++) {
+    let flagKey = flagKeys[i]
+    flagsImagesJSON[flagKey]['image'] = loadImage(flagsImagesJSON[flagKey]['path']);
+  }
+}
+
 //=========================================================================
 // SETUP CODE
 //=========================================================================
 
-function preload() {
-  statesInfo = loadJSON("./results/statesInfo.json");
-}
 
 function setup() {
   createCanvas(windowWidth, windowHeight); // From global window sizes
@@ -31,8 +103,15 @@ function setup() {
   // Create a list of state buttons
   createStateButtons();
 
+  // // Finish loading image
+  img = flagsImagesJSON['Brazil']['image'];
+  img.loadPixels();
+  // get color of middle pixel
+  c = img.get(img.width / 2, img.height / 2);
+
   // Console Logs for debugging purposes
-  checkStatesInfo();
+  checkStatesJSON();
+  checkImagesJSON();
 }
 
 function createDataVizBackground(){
@@ -47,40 +126,40 @@ function createDataVizBackground(){
   subtitle.position(50, windowHeight-120);
 }
 
-function checkStatesInfo() {
-  console.log(typeof statesInfo);
-  console.log(statesInfo.AK);
-  console.log(statesInfo);
-  for (let i = 0; i < statesList.length; i++) {
-    console.log(statesList[i].stateName)
-    //console.log(statesList[i].row)
-    //console.log(statesList[i].col)
-    console.log(statesList[i].xEllipse)
-    console.log(statesList[i].yEllipse)
-  }
+function checkStatesJSON() {
+  console.log(typeof statesJSON);
+  console.log(statesJSON.AK.top1.counts);
+  console.log(statesJSON);
+  // for (let i = 0; i < statesList.length; i++) {
+  //   console.log(statesList[i].stateName)
+  //   //console.log(statesList[i].row)
+  //   //console.log(statesList[i].col)
+  //   console.log(statesList[i].xEllipse)
+  //   console.log(statesList[i].yEllipse)
+  // }
 }
 
 function createStatesList(){  
-  let stateKeys = Object.keys(statesInfo);
+  let stateKeys = Object.keys(statesJSON);
   for (let i = 0; i < stateKeys.length; i++) {
     let stateKey = stateKeys[i]
     
     // Declare new state object with its info
-    state = new stateBubble2(row=statesInfo[stateKey].row, 
-                                 col=statesInfo[stateKey].col,
+    var state = new stateBubble2(row=statesJSON[stateKey].row, 
+                                 col=statesJSON[stateKey].col,
                                  stateName=stateKey,
-                                 stateInfo=statesInfo[stateKey]);
+                                 stateInfo=statesJSON[stateKey]);
     statesList.push(state);
   }
 }
 
 function createStateButtons(){
       // Declare Button
-      var stateKeys = Object.keys(statesInfo);
+      var stateKeys = Object.keys(statesJSON);
       for (let i = 0; i < stateKeys.length; i++) {
         stateKey = stateKeys[i];
         stateBub = statesList[i];
-        stateInfo = statesInfo[stateKey];
+        stateInfo = statesJSON[stateKey];
 
         createButton(stateKey)
           .position(stateBub.xEllipse, stateBub.yEllipse)
@@ -128,15 +207,20 @@ function plotPopulationBars(info) {
     let population_count = info[topList[i]].population
     let cuisine_count = info[topList[i]].counts
 
+    // country flag
+    img = flagsImagesJSON[country]['image'];
+    img.loadPixels();
+    image(img, birthplacesPosx, birthplacesPosy, 40, 40);
+
     fill(bubbleColorClick);
     stroke('white');
+
     // country names
     textSize(16);
     text(country, birthplacesPosx-10, birthplacesPosy+=60); 
 
     // population bars
     rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*500, 35);
-    //noFill();
     noStroke();
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
     textSize(10);
@@ -147,6 +231,30 @@ function plotPopulationBars(info) {
     rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*200, 30);
     textSize(10);
     text("restaurants: "+cuisine_count, birthplacesPosx+230, birthplacesPosy); 
+  }
+}
+
+function checkImagesJSON() {
+  // console.log(typeof flagsImagesJSON);
+  // console.log(flagsImagesJSON['Mexico']['path']);
+  // console.log(flagsImagesJSON);
+
+  var flagKeys = Object.keys(flagsImagesJSON);
+  for (let i = 0; i < flagKeys.length; i++) {
+    let flagKey = flagKeys[i]
+    console.log(flagsImagesJSON[flagKey])
+  }
+}
+
+function loadImagesJSON() {
+  var flagKeys = Object.keys(flagsImagesJSON);
+  for (let i = 0; i < flagKeys.length; i++) {
+    let flagKey = flagKeys[i];
+    console.log(flagKey);
+
+    img = flagsImagesJSON['Brazil']['image'];
+    img.loadPixels();
+
   }
 }
 
@@ -210,4 +318,3 @@ class stateBubble2 {
 //=========================================================================
 // DRAW PAGE
 //=========================================================================
-
