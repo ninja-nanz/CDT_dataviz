@@ -83,7 +83,7 @@ function preload() {
   statesJSON = loadJSON("./results/statesInfo.json");
   preloadFlags();
   bgPlate = loadImage('../data/bgplate.png');
-  myFont = loadFont('./src_js/karla.ttf');
+  myFont = loadFont('./src_js/Karla-Bold.ttf');
 }
 
 
@@ -135,6 +135,7 @@ function createDataVizBackground(){
  
   
   let header = createElement('h1', "The World At Your Plate");
+  header.style( 'font-family', myFont)
   header.center()
   header.position(windowWidth/2 - 465, 70);
 
