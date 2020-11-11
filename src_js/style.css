@@ -1,13 +1,16 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Karla;
   background-color: #e4dbd6;
   color: white;
   font-weight: bold;
 }
 
-
+@font-face{
+  font-family: "Karla";
+  src: url("./src_js/karla.ttf") format("truetype");
+}
 
 h1 {
   color: #292929;

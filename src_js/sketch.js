@@ -14,6 +14,7 @@ let mouseXinBox, mouseYinBox;
 var state;
 
 let subheaderText = "(Pick a State)"
+let myFont;
 
 let bgPlate;
 
@@ -82,6 +83,7 @@ function preload() {
   statesJSON = loadJSON("./results/statesInfo.json");
   preloadFlags();
   bgPlate = loadImage('../data/bgplate.png');
+  myFont = loadFont('./src_js/karla.ttf');
 }
 
 
@@ -131,7 +133,7 @@ function setup() {
 function createDataVizBackground(){
   background('#FFF8EE');
  
-
+  
   let header = createElement('h1', "The World At Your Plate");
   header.center()
   header.position(windowWidth/2 - 465, 70);
@@ -141,7 +143,7 @@ function createDataVizBackground(){
 
   let title = createElement('h3', "America’s favorite cuisines based on \
   <br> its immigrant population and restaurants");
-title.position(50, windowHeight-170);
+  title.position(50, windowHeight-170);
 
   let subtitle = createElement('p', "America's is known for it's diversity of people and cuisines.\
                                     Explore how much our favourite types of cuisines match the immigrant \
@@ -212,7 +214,7 @@ function createMousePressedFunction(stateInfo) {
     noStroke();
     fill("#292929");
     textSize(30);
-    textFont('Helvetica');
+    textFont(myFont);
     textAlign(CENTER);
     //text(info.state_name, windowWidth - 300, 50);
     
@@ -236,6 +238,7 @@ function plotPopulationBars(info) {
 
   textStyle(BOLD);
   textAlign(RIGHT);
+  textFont(myFont);
   textSize(14);
   textLeading(18);
   fill("#F08200");
@@ -249,7 +252,7 @@ function plotPopulationBars(info) {
   subheader.position(windowWidth/2 - 365, 220);
 
   textSize(11);
-  textFont('Helvetica');
+  textFont(myFont);
   textAlign(RIGHT);
   fill(bubbleColorMain);
   text("RESTAURANTS", birthplacesPosx-20, birthplacesPosy+15); 
