@@ -6,11 +6,13 @@ let statesJSON;
 let flagsJSON;
 let statesList = [];
 
-let bubbleSize = 50;
+let bubbleSize = 40;
 let bubbleColorMain = "#259F40";
 let bubbleColorClick = "#FF8A00";
 let mouseXinBox, mouseYinBox;
 var state;
+
+let bgPlate;
 
 // Because P5 Preload is uuuuuuugly
 let flagsImagesJSON = {'Bosnia and Herzegovina': {'path': '../data/birthplace_flags/Bosnia_Herzegovina.png'},
@@ -76,7 +78,10 @@ let flagsImagesJSON = {'Bosnia and Herzegovina': {'path': '../data/birthplace_fl
 function preload() {
   statesJSON = loadJSON("./results/statesInfo.json");
   preloadFlags();
+  bgPlate = loadImage('../data/bgplate.png');
 }
+
+
 
 function preloadFlags(){
   var flagKeys = Object.keys(flagsImagesJSON);
@@ -112,13 +117,26 @@ function setup() {
   // Console Logs for debugging purposes
   checkStatesJSON();
   checkImagesJSON();
+
+   //tint(255, 127)
+   image(bgPlate, -40, -200, 1200, 1200)
 }
 
 function createDataVizBackground(){
   background('#FFF8EE');
+ 
 
-  let title = createElement('h1', "What is America's favorite cuisine?");
-  title.position(50, windowHeight-240);
+
+
+  let header = createElement('h1', "The World at Your Plate");
+  header.position(windowWidth/2 - 500, 50);
+
+  let subheader = createElement('h2', "Pick a state");
+  subheader.position(windowWidth/2 - 250, 150);
+
+  let title = createElement('h2', "America’s favorite cuisines based on \
+  its immigrant population and restaurants");
+title.position(50, windowHeight-200);
 
   let subtitle = createElement('p', "America's is known for it's diversity of people and cuisines.\
                                     Explore how much our favourite types of cuisines match the immigrant \
@@ -181,7 +199,7 @@ function createMousePressedFunction(stateInfo) {
     noStroke();
     fill(75);
     textSize(30);
-    text(info.state_name, windowWidth /2 + 500, 200);
+    text(info.state_name, windowWidth /2 + 500, 30);
     textSize(20);
     
     // Plot the immigrant population per state
@@ -194,13 +212,16 @@ function plotPopulationBars(info) {
   let topList = ["top1", "top2", "top3", "top4", "top5", 
                  "top6", "top7", "top8", "top9", "top10"]
 
-  birthplacesPosx = windowWidth - 600;
-  birthplacesPosy = 300; 
+  birthplacesPosx = windowWidth - 300;
+  birthplacesPosy = 70; 
   textAlign(RIGHT);
   text("Total immigrant population: " + info.total_population, 
-                                        birthplacesPosx+200, 250);
+                                        birthplacesPosx+200, 50);
+
+                                        image(bgPlate, -40, -200, 1200, 1200)
 
   for (let i = 0; i < topList.length; i++) {
+    
     let population_perc = info[topList[i]].population / info.total_population
     let restaurant_perc = info[topList[i]].counts / info.total_restaurants
     let country = info[topList[i]].country
@@ -210,27 +231,35 @@ function plotPopulationBars(info) {
     // country flag
     img = flagsImagesJSON[country]['image'];
     img.loadPixels();
-    image(img, birthplacesPosx, birthplacesPosy, 40, 40);
+    image(img, birthplacesPosx, birthplacesPosy+=20, 50, 50);
 
-    fill(bubbleColorClick);
-    stroke('white');
+ 
 
     // country names
-    textSize(16);
-    text(country, birthplacesPosx-10, birthplacesPosy+=60); 
+    fill(75);
+    textSize(12);
+    textAlign(CENTER);
+    text(country, birthplacesPosx-25, birthplacesPosy+=50, 100,100); 
 
     // population bars
-    rect(birthplacesPosx+30, birthplacesPosy-=20, population_perc*500, 35);
+    fill(bubbleColorClick);
+    rect(birthplacesPosx+70, birthplacesPosy-50, population_perc*500, 35);
     noStroke();
+   
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
-    textSize(10);
-    text("population: "+population_count, birthplacesPosx+230, birthplacesPosy); 
+    textAlign(LEFT);
+    textSize(12);
+    text("population: "+population_count, birthplacesPosx+70, birthplacesPosy); 
 
     // restaurant bars
     fill(bubbleColorMain);
-    rect(birthplacesPosx+30, birthplacesPosy+=10, restaurant_perc*200, 30);
-    textSize(10);
-    text("restaurants: "+cuisine_count, birthplacesPosx+230, birthplacesPosy); 
+    //rotate(180, 3.0)
+    rect(birthplacesPosx-20, birthplacesPosy-50, restaurant_perc*-200, 30);
+    textSize(12);
+    textAlign(RIGHT);
+    text("restaurants: "+cuisine_count, birthplacesPosx-20, birthplacesPosy); 
+
+    
   }
 }
 
@@ -296,8 +325,8 @@ class stateBubble2 {
       this.bubbleColor = bubbleColorMain;
 
       // Define x and y with window parameters
-      let xTranslation = (width-13)*0.001; // For columns of US MAP
-      let yTranslation = (height-9)*0.004; // For rows of US MAP      
+      let xTranslation = (width-13)*0.003; // For columns of US MAP
+      let yTranslation = (height-9)*0.006; // For rows of US MAP      
       this.x = (col*1.2) + xTranslation;
       this.y = (row*1.2) + yTranslation;
 
@@ -318,3 +347,10 @@ class stateBubble2 {
 //=========================================================================
 // DRAW PAGE
 //=========================================================================
+
+function draw() { 
+  
+  
+
+
+}
