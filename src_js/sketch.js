@@ -135,7 +135,6 @@ function createDataVizBackground(){
  
   
   let header = createElement('h1', "The World At Your Plate");
-  header.style( 'font-family', myFont)
   header.center()
   header.position(windowWidth/2 - 465, 70);
 
@@ -152,7 +151,7 @@ function createDataVizBackground(){
   subtitle.position(50, windowHeight-110);
 
   let databout = createElement('h5', "<b> DATA </b> <br> Immigrant population from ACS2018 <br> Restaurant data from Zomato API <br> <i> Statistically insignificant data excluded </i>"  );
-  databout.position(770, windowHeight-100);
+  databout.position(770, windowHeight-110);
 
 }
 
@@ -235,15 +234,15 @@ function plotPopulationBars(info) {
                  "top6", "top7", "top8", "top9", "top10"]
 
   birthplacesPosx = windowWidth - 350;
-  birthplacesPosy = 20; 
+  birthplacesPosy = 24; 
 
   textStyle(BOLD);
   textAlign(RIGHT);
   textFont(myFont);
-  textSize(14);
+  textSize(13);
   textLeading(18);
   fill("#F08200");
-  text("Total immigrant population\n in " + subheaderText + ": " + info.total_population.toLocaleString(), windowWidth-20, windowHeight -50);
+  text("Total immigrant population\n in " + subheaderText + ": " + info.total_population.toLocaleString(), windowWidth-20, windowHeight -60);
 
   image(bgPlate, 20, -5, 900, 900)
   
@@ -252,21 +251,21 @@ function plotPopulationBars(info) {
   let subheader = createElement('h2', subheaderText);
   subheader.position(windowWidth/2 - 365, 220);
 
-  textSize(11);
+  textSize(12);
   textFont(myFont);
   textAlign(RIGHT);
   fill(bubbleColorMain);
-  text("RESTAURANTS", birthplacesPosx-20, birthplacesPosy+15); 
+  text("RESTAURANTS |", birthplacesPosx-20, birthplacesPosy+10); 
 
   fill(75);
   textAlign(CENTER);
 
   text("COUNTRY", birthplacesPosx+25, birthplacesPosy+ 5); 
-  text("& CUISINE", birthplacesPosx+25, birthplacesPosy+ 20); 
+  text("& CUISINE", birthplacesPosx+25, birthplacesPosy+ 17); 
 
   fill("#F08200");
   textAlign(LEFT);
-  text("IMMIGRANTS", birthplacesPosx+65, birthplacesPosy+ 15); 
+  text("| IMMIGRANTS", birthplacesPosx+65, birthplacesPosy+ 10); 
   
 
   for (let i = 0; i < topList.length; i++) {
@@ -287,9 +286,9 @@ function plotPopulationBars(info) {
 
     // country names    
     fill(75);
-    textSize(12);
+    textSize(13);
     textAlign(CENTER);
-    textLeading(14);
+    textLeading(15);
     text(country, birthplacesPosx-25, birthplacesPosy+=49, 100,100); 
 
     
