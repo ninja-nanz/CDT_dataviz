@@ -8,7 +8,7 @@ html, body {
 }
 
 @font-face{
-  font-family: "Karla Bold";
+  font-family: "Karla";
   src: url("./src_js/Karla-Bold.ttf") format("truetype");
 }
 
@@ -18,7 +18,7 @@ h1 {
   width: 400px;
   text-align: center;
   line-height: 111%;
-  font-family: "Karla Bold";
+  font-family: "Karla";
 }
 
 h2 {
