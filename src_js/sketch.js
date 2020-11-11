@@ -135,6 +135,7 @@ function createDataVizBackground(){
  
   
   let header = createElement('h1', "The World At Your Plate");
+  header.style('font-family', 'Helvetica')
   header.center()
   header.position(windowWidth/2 - 465, 70);
 

@@ -18,7 +18,13 @@ h1 {
   width: 400px;
   text-align: center;
   line-height: 111%;
+<<<<<<< HEAD
   font-family: Arial, Helvetica, sans-serif;
+||||||| merged common ancestors
+  font-family: "Karla Bold";
+=======
+  font-family: "Karla";
+>>>>>>> 452d59796f76831384bc7cae4c533c97f9ca6732
 }
 
 h2 {
