@@ -2,6 +2,7 @@
 // DECLARE VARIABLES
 //=========================================================================
 
+
 let statesJSON;
 let flagsJSON;
 let statesList = [];
@@ -11,6 +12,8 @@ let bubbleColorMain = "#259F40";
 let bubbleColorClick = "#FF8A00";
 let mouseXinBox, mouseYinBox;
 var state;
+
+let subheaderText = "(Pick a State)"
 
 let bgPlate;
 
@@ -99,6 +102,7 @@ function preloadFlags(){
 function setup() {
   createCanvas(windowWidth, windowHeight); // From global window sizes
 
+  
   // Background
   createDataVizBackground();
   
@@ -118,30 +122,35 @@ function setup() {
   checkStatesJSON();
   checkImagesJSON();
 
-   //tint(255, 127)
-   image(bgPlate, -40, -200, 1200, 1200)
+   
+   image(bgPlate, 20, -5, 900, 900)
+
+
 }
 
 function createDataVizBackground(){
   background('#FFF8EE');
  
 
+  let header = createElement('h1', "The World At Your Plate");
+  header.center()
+  header.position(windowWidth/2 - 465, 70);
 
+  let subheader = createElement('h6', subheaderText);
+  subheader.position(windowWidth/2 - 365, 190);
 
-  let header = createElement('h1', "The World at Your Plate");
-  header.position(windowWidth/2 - 500, 50);
-
-  let subheader = createElement('h2', "Pick a state");
-  subheader.position(windowWidth/2 - 250, 150);
-
-  let title = createElement('h2', "America’s favorite cuisines based on \
-  its immigrant population and restaurants");
-title.position(50, windowHeight-200);
+  let title = createElement('h3', "America’s favorite cuisines based on \
+  <br> its immigrant population and restaurants");
+title.position(50, windowHeight-170);
 
   let subtitle = createElement('p', "America's is known for it's diversity of people and cuisines.\
                                     Explore how much our favourite types of cuisines match the immigrant \
                                     population in each state.");
-  subtitle.position(50, windowHeight-120);
+  subtitle.position(50, windowHeight-110);
+
+  let databout = createElement('h5', "<b> DATA </b> <br> Immigrant population from ACS2018 <br> Restaurant data from Zomato API <br> <i> Statistically insignificant data excluded </i>"  );
+  databout.position(770, windowHeight-100);
+
 }
 
 function checkStatesJSON() {
@@ -191,34 +200,70 @@ function createStateButtons(){
 
 function createMousePressedFunction(stateInfo) {
   return function() {fun(stateInfo);}
+
   
   function fun(info) {
 
+    subheaderText = info.state_name
+    console.log(subheaderText)
     // Plot the title of extra info
+    //STATE NAME *************
     background('#FFF8EE');
     noStroke();
-    fill(75);
+    fill("#292929");
     textSize(30);
-    text(info.state_name, windowWidth /2 + 500, 30);
-    textSize(20);
+    textFont('Helvetica');
+    textAlign(CENTER);
+    //text(info.state_name, windowWidth - 300, 50);
+    
     
     // Plot the immigrant population per state
     plotPopulationBars(info)
+
+
   
   }
+
+  
 }
 
 function plotPopulationBars(info) {
   let topList = ["top1", "top2", "top3", "top4", "top5", 
                  "top6", "top7", "top8", "top9", "top10"]
 
-  birthplacesPosx = windowWidth - 300;
-  birthplacesPosy = 70; 
-  textAlign(RIGHT);
-  text("Total immigrant population: " + info.total_population, 
-                                        birthplacesPosx+200, 50);
+  birthplacesPosx = windowWidth - 350;
+  birthplacesPosy = 20; 
 
-                                        image(bgPlate, -40, -200, 1200, 1200)
+  textStyle(BOLD);
+  textAlign(RIGHT);
+  textSize(14);
+  textLeading(18);
+  fill("#F08200");
+  text("Total immigrant population\n in " + subheaderText + ": " + info.total_population.toLocaleString(), windowWidth-20, windowHeight -50);
+
+  image(bgPlate, 20, -5, 900, 900)
+  
+  //labels
+   
+  let subheader = createElement('h2', subheaderText);
+  subheader.position(windowWidth/2 - 365, 220);
+
+  textSize(11);
+  textFont('Helvetica');
+  textAlign(RIGHT);
+  fill(bubbleColorMain);
+  text("RESTAURANTS", birthplacesPosx-20, birthplacesPosy+15); 
+
+  fill(75);
+  textAlign(CENTER);
+
+  text("COUNTRY", birthplacesPosx+25, birthplacesPosy+ 5); 
+  text("& CUISINE", birthplacesPosx+25, birthplacesPosy+ 20); 
+
+  fill("#F08200");
+  textAlign(LEFT);
+  text("IMMIGRANTS", birthplacesPosx+65, birthplacesPosy+ 15); 
+  
 
   for (let i = 0; i < topList.length; i++) {
     
@@ -228,10 +273,11 @@ function plotPopulationBars(info) {
     let population_count = info[topList[i]].population
     let cuisine_count = info[topList[i]].counts
 
+  
     // country flag
     img = flagsImagesJSON[country]['image'];
     img.loadPixels();
-    image(img, birthplacesPosx, birthplacesPosy+=20, 50, 50);
+    image(img, birthplacesPosx, birthplacesPosy+=25.5, 52, 52);
 
  
 
@@ -239,28 +285,34 @@ function plotPopulationBars(info) {
     fill(75);
     textSize(12);
     textAlign(CENTER);
-    text(country, birthplacesPosx-25, birthplacesPosy+=50, 100,100); 
+    textLeading(14);
+    text(country, birthplacesPosx-25, birthplacesPosy+=49, 100,100); 
 
     // population bars
     fill(bubbleColorClick);
-    rect(birthplacesPosx+70, birthplacesPosy-50, population_perc*500, 35);
+    rect(birthplacesPosx+65, birthplacesPosy-40, population_perc*500, 25, 2, 8, 8, 2);
     noStroke();
    
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
     textAlign(LEFT);
-    textSize(12);
-    text("population: "+population_count, birthplacesPosx+70, birthplacesPosy); 
+    textSize(13);
+    fill("#F08200");
+    text(population_count.toLocaleString(), birthplacesPosx+65, birthplacesPosy+10); 
 
     // restaurant bars
     fill(bubbleColorMain);
     //rotate(180, 3.0)
-    rect(birthplacesPosx-20, birthplacesPosy-50, restaurant_perc*-200, 30);
-    textSize(12);
+    rect(birthplacesPosx-20, birthplacesPosy-40, restaurant_perc*-100, 25, 2, 8, 8, 2);
+    textSize(13);
     textAlign(RIGHT);
-    text("restaurants: "+cuisine_count, birthplacesPosx-20, birthplacesPosy); 
+    text(cuisine_count.toLocaleString(), birthplacesPosx-20, birthplacesPosy+10); 
+
+
+  
 
     
   }
+ 
 }
 
 function checkImagesJSON() {
@@ -325,7 +377,7 @@ class stateBubble2 {
       this.bubbleColor = bubbleColorMain;
 
       // Define x and y with window parameters
-      let xTranslation = (width-13)*0.003; // For columns of US MAP
+      let xTranslation = (width-13)*0.002; // For columns of US MAP
       let yTranslation = (height-9)*0.006; // For rows of US MAP      
       this.x = (col*1.2) + xTranslation;
       this.y = (row*1.2) + yTranslation;
@@ -334,8 +386,8 @@ class stateBubble2 {
       this.stateInfo = stateInfo;
 
       // Declare positions of state draw
-      this.xEllipse = this.x*bubbleSize*1.07
-      this.yEllipse = this.y*bubbleSize*0.9
+      this.xEllipse = this.x*bubbleSize*1.04
+      this.yEllipse = this.y*bubbleSize*1.04
       this.xText = this.x*bubbleSize*1.07-textWidth(this.stateName)*0.5;
       this.yText = this.y*bubbleSize*0.9+10;
 
