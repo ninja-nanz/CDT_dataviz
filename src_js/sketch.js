@@ -281,21 +281,22 @@ function plotPopulationBars(info) {
 
  
 
-    // country names
+    // country names    
     fill(75);
     textSize(12);
     textAlign(CENTER);
     textLeading(14);
     text(country, birthplacesPosx-25, birthplacesPosy+=49, 100,100); 
 
+    
+
     // population bars
     fill(bubbleColorClick);
     rect(birthplacesPosx+65, birthplacesPosy-40, population_perc*500, 25, 2, 8, 8, 2);
     noStroke();
-   
     rect(birthplacesPosx , birthplacesPosy, 0, 0);
+
     textAlign(LEFT);
-    textSize(13);
     fill("#F08200");
     text(population_count.toLocaleString(), birthplacesPosx+65, birthplacesPosy+10); 
 
@@ -303,7 +304,7 @@ function plotPopulationBars(info) {
     fill(bubbleColorMain);
     //rotate(180, 3.0)
     rect(birthplacesPosx-20, birthplacesPosy-40, restaurant_perc*-100, 25, 2, 8, 8, 2);
-    textSize(13);
+
     textAlign(RIGHT);
     text(cuisine_count.toLocaleString(), birthplacesPosx-20, birthplacesPosy+10); 
 
